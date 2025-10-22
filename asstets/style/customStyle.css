@@ -1,0 +1,289 @@
+:root {
+  --primary-color: #1E3070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.myContiner {
+  width: 100%;
+  max-width: 1770px;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.contactBar {
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  padding: 12px;
+}
+.contactBar .contact_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+}
+.contactBar .contact_wrapper span {
+  font-size: 16px;
+}
+
+header#header {
+  width: 100%;
+  position: absolute;
+  top: 95px;
+  left: 0;
+}
+header#header nav {
+  width: 100%;
+  max-width: 1644px;
+  margin: 0 auto;
+}
+header#header nav .nav_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header#header nav .nav_wrapper .navLogo {
+  width: 120px;
+  height: 120px;
+}
+header#header nav .nav_wrapper .navLogo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+header#header nav .nav_wrapper .nav_menu .nav_menu_list {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  display: flex;
+  gap: 16px;
+}
+header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item {
+  background-color: transparent;
+  padding: 16px 22px;
+  color: var(--primary-color);
+  border-radius: 8px;
+}
+header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item a {
+  font-weight: 600;
+}
+header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item:hover {
+  background-color: var(--primary-color);
+}
+header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item:hover a {
+  color: white;
+}
+header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item.active {
+  background-color: var(--primary-color);
+}
+header#header nav .nav_wrapper .nav_Buttons button {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px 14px;
+  border-radius: 8px;
+}
+
+#homeBanner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  min-height: 600px;
+  background-image: url("../images/homeBanner.png");
+  background-size: cover;
+  background-position: center center;
+}
+#homeBanner .banner_content_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#homeBanner .banner_content_wrapper .banner_content {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  color: white;
+}
+#homeBanner .banner_content_wrapper .banner_content h1 {
+  font-size: 74px;
+  font-weight: 600;
+}
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px 14px;
+  border-radius: 8px;
+}
+
+#aboutPractice {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 80px 0;
+}
+#aboutPractice .aboutPracticeWrapper {
+  width: 100%;
+  background-color: #E9EAF1;
+  padding: 48px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+#aboutPractice .aboutPracticeWrapper .practiceImage {
+  width: 50%;
+  height: 100%;
+}
+#aboutPractice .aboutPracticeWrapper .practiceImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent {
+  width: 50%;
+  height: 100%;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent h2 {
+  font-size: 64px;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent h2:nth-child(2) {
+  color: green;
+}
+#aboutPractice .aboutPracticeWrapper .practiceContent .practiceContentWrapper button {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 8px;
+}
+
+#consitionWeTreat {
+  width: 100%;
+}
+#consitionWeTreat .conditionWeTreatWrapper .heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+  border: 1px solid #6DC31C;
+  border-radius: 12px;
+  background-color: #F0F9E8;
+}
+#consitionWeTreat .conditionWeTreatWrapper .heading .title {
+  width: 20%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+#consitionWeTreat .conditionWeTreatWrapper .heading .lineWrapper {
+  width: 20%;
+  height: 5px;
+  background: radial-gradient(green, #00814b, white, transparent);
+  background-size: 100% 100%;
+}
+#consitionWeTreat .conditionWeTreatWrapper .heading .desc {
+  width: 60%;
+}
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
+  width: 425px;
+  min-width: 300px;
+  max-width: 425px;
+  height: 556px;
+  border: 1px dashed red;
+  position: relative;
+}
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 556px;
+  background-color: #1E3070;
+  z-index: 3;
+  transition: 0.3s all linear;
+}
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #00814b;
+  z-index: 1;
+}
+#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
+  height: 300px;
+}
+footer#footer {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: white;
+}
+footer#footer .footerWrapper {
+  width: 100%;
+}
+footer#footer .footerWrapper .footernav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+footer#footer .footerWrapper .footernav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer#footer .footerWrapper .footernav .footerNavIcon {
+  display: flex;
+  gap: 10px;
+}
+footer#footer .footerWrapper .footerContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer#footer .footerWrapper .footerContent .footerCol1 {
+  display: flex;
+  gap: 120px;
+}
+footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  color: var(--primary-color);
+  padding: 5px 12px;
+}
+footer#footer .footerWrapper .footNote {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}/*# sourceMappingURL=customStyle.css.map */

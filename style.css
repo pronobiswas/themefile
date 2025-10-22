@@ -1,0 +1,18 @@
+/*
+Theme Name: Mohammed
+Theme URI: https://example.com/
+Author: sparcktech Agency
+Author URI: https://example.com/
+Description: A custom WordPress theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: mohamed
+*/
+
+.myContiner{
+    width: 100%;
+    max-width: 1770px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
