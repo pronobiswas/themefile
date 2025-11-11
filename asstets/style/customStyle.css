@@ -1,31 +1,3 @@
-:root {
-  --primary-color: #1E3070;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.myContiner {
-  width: 100%;
-  max-width: 1770px;
-  margin: 0 auto;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
 .contactBar {
   background-color: var(--primary-color);
   color: white;
@@ -35,6 +7,7 @@ a {
 .contactBar .contact_wrapper {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   gap: 32px;
 }
@@ -103,6 +76,428 @@ header#header nav .nav_wrapper .nav_Buttons button {
   color: white;
   padding: 20px 14px;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 576px) {
+  .contactBar {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    padding: 12px;
+  }
+  .contactBar .contact_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  .contactBar .contact_wrapper div {
+    display: flex;
+  }
+  .contactBar .contact_wrapper div span {
+    font-size: 12px;
+  }
+  header#header {
+    width: 100%;
+    position: absolute;
+    top: 105px;
+    left: 0;
+  }
+  header#header nav {
+    width: 100%;
+    max-width: 1644px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  header#header nav .nav_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header#header nav .nav_wrapper .navLogo {
+    width: 80px;
+    height: 80px;
+  }
+  header#header nav .nav_wrapper .navLogo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  header#header nav .nav_wrapper .nav_menu {
+    display: none;
+  }
+  header#header nav .nav_wrapper .nav_menu .nav_menu_list {
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    gap: 16px;
+  }
+  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item {
+    background-color: transparent;
+    padding: 16px 22px;
+    color: var(--primary-color);
+    border-radius: 8px;
+  }
+  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item a {
+    font-weight: 600;
+  }
+  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item:hover {
+    background-color: var(--primary-color);
+  }
+  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item:hover a {
+    color: white;
+  }
+  header#header nav .nav_wrapper .nav_menu .nav_menu_list .nav_menu_list_item.active {
+    background-color: var(--primary-color);
+  }
+  header#header nav .nav_wrapper .nav_Buttons button {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  header#header #nav_menu_mobile {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+  }
+  header#header #nav_menu_mobile .mobileMenuWrapper {
+    padding: 20px 25px;
+  }
+  header#header #nav_menu_mobile .mobileMenuWrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  header#header #nav_menu_mobile .mobileMenuWrapper ul li {
+    border-bottom: 1px solid #213ea7;
+  }
+}
+footer#footer {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: white;
+}
+footer#footer .footerWrapper {
+  width: 100%;
+}
+footer#footer .footerWrapper .footernav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+footer#footer .footerWrapper .footernav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer#footer .footerWrapper .footernav .footerNavIcon {
+  display: flex;
+  gap: 10px;
+}
+footer#footer .footerWrapper .footerContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer#footer .footerWrapper .footerContent .footerCol1 {
+  display: flex;
+  gap: 120px;
+}
+footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  color: var(--primary-color);
+  padding: 5px 12px;
+}
+footer#footer .footerWrapper .footNote {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  footer#footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #1E3070;
+    color: white;
+  }
+  footer#footer .footerWrapper {
+    width: 100%;
+  }
+  footer#footer .footerWrapper .footernav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  footer#footer .footerWrapper .footernav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+  footer#footer .footerWrapper .footernav ul li {
+    font-size: 12px;
+  }
+  footer#footer .footerWrapper .footernav .footerNavIcon {
+    display: flex;
+    gap: 10px;
+  }
+  footer#footer .footerWrapper .footerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .foterLogo {
+    width: 100px;
+    height: 100px;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .foterLogo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 5px 12px;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol2 {
+    width: calc(100% - 40px);
+  }
+  footer#footer .footerWrapper .footerContent .footerCol2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer#footer .footerWrapper .footNote {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 576px) {
+  footer#footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #1E3070;
+    color: white;
+  }
+  footer#footer .footerWrapper {
+    width: 100%;
+  }
+  footer#footer .footerWrapper .footernav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  footer#footer .footerWrapper .footernav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+  footer#footer .footerWrapper .footernav ul li {
+    font-size: 14px;
+  }
+  footer#footer .footerWrapper .footernav .footerNavIcon {
+    display: flex;
+    gap: 10px;
+  }
+  footer#footer .footerWrapper .footerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .foterLogo {
+    width: 100px;
+    height: 100px;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .foterLogo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 5px 12px;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol2 {
+    width: 100%;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer#footer .footerWrapper .footNote {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer#footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #1E3070;
+    color: white;
+  }
+  footer#footer .footerWrapper {
+    width: 100%;
+  }
+  footer#footer .footerWrapper .footernav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  footer#footer .footerWrapper .footernav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+  footer#footer .footerWrapper .footernav ul li {
+    font-size: 16px;
+  }
+  footer#footer .footerWrapper .footernav .footerNavIcon {
+    display: flex;
+    gap: 10px;
+  }
+  footer#footer .footerWrapper .footerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .foterLogo {
+    width: 100px;
+    height: 100px;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .foterLogo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 5px 12px;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol2 {
+    width: 100%;
+  }
+  footer#footer .footerWrapper .footerContent .footerCol2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer#footer .footerWrapper .footNote {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+:root {
+  --primary-color: #1E3070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.myContiner {
+  width: 100%;
+  max-width: 1770px;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
 }
 
 #homeBanner {
@@ -239,51 +634,4 @@ header#header nav .nav_wrapper .nav_Buttons button {
 }
 #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
   height: 300px;
-}
-footer#footer {
-  width: 100%;
-  padding: 20px;
-  background-color: var(--primary-color);
-  color: white;
-}
-footer#footer .footerWrapper {
-  width: 100%;
-}
-footer#footer .footerWrapper .footernav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-footer#footer .footerWrapper .footernav ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-footer#footer .footerWrapper .footernav .footerNavIcon {
-  display: flex;
-  gap: 10px;
-}
-footer#footer .footerWrapper .footerContent {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-footer#footer .footerWrapper .footerContent .footerCol1 {
-  display: flex;
-  gap: 120px;
-}
-footer#footer .footerWrapper .footerContent .footerCol1 .footerContact h6 {
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: white;
-  color: var(--primary-color);
-  padding: 5px 12px;
-}
-footer#footer .footerWrapper .footNote {
-  display: flex;
-  align-items: center;
-  gap: 30px;
 }/*# sourceMappingURL=customStyle.css.map */

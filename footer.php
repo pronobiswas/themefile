@@ -1,7 +1,7 @@
 <!-- footer -->
 
 
-<footer id="footer">
+<footer id="footer" class="">
     <div class="myContiner">
         <div class="footerWrapper">
             <div class="footernav">
@@ -46,7 +46,7 @@
                   <p>Fax: (949)810-3172</p>
                   <address>
                     <p>Address:</p>
-                    <p>9711 3rd Avenue ,2nd flr Brooklyn, NY 11209</p>
+                    <p>9711 3rd Avenue ,2nd flrBrooklyn, NY 11209</p>
                   </address>
                 </div>
               </div>

@@ -38,22 +38,38 @@
                     <img src="http://localhost/smohamed/wp-content/uploads/2025/10/header_log.png" alt="logo">
                 </div>
                 <!-- ===nav menu=== -->
-                 <div class="nav_menu">
+                 <div class="nav_menu hidden">
                     <ul class="nav_menu_list">
-                        <li class="nav_menu_list_item"><a href="#">Home</a></li>
-                        <li class="nav_menu_list_item"><a href="#">About Practice</a></li>
-                        <li class="nav_menu_list_item"><a href="#">Conditions</a></li>
-                        <li class="nav_menu_list_item"><a href="#">Treatments</a></li>
-                        <li class="nav_menu_list_item"><a href="#">Patient Education</a></li>
-                        <li class="nav_menu_list_item"><a href="#">Office Locations</a></li>
-                        <li class="nav_menu_list_item"><a href="#">Contact</a></li>
+                        <li class="nav_menu_list_item"><a href="<?php echo home_url('/'); ?>">Home</a></li>
+                        <li class="nav_menu_list_item"><a href="<?php echo home_url('/about-practice'); ?>">About Practice</a></li>
+                        <li class="nav_menu_list_item"><a href="<?php echo home_url('/conditions'); ?>">Conditions</a></li>
+                        <li class="nav_menu_list_item"><a href="<?php echo home_url('/treatments'); ?>">Treatments</a></li>
+                        <li class="nav_menu_list_item"><a href="<?php echo home_url('/patient-education'); ?>">Patient Education</a></li>
+                        <li class="nav_menu_list_item"><a href="<?php echo home_url('/office-locations'); ?>">Office Locations</a></li>
+                        <li class="nav_menu_list_item"><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
                     </ul>
                  </div>
                  <!-- ====nav button=== -->
                   <div class="nav_Buttons">
                     <button>Book Appointment</button>
+                    <span id="mobile_menu_icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1E3070"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
+                    <span id="mobile_menu_icon_close" class="hidden"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1E3070"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
                   </div>
+                  
+                  
 
             </div>
         </nav>
+        <div id="nav_menu_mobile" class="hidden">
+            <div class="mobileMenuWrapper">
+                <ul>
+                    <li><a href="#">menu item</a></li>
+                    <li><a href="#">menu item 1</a></li>
+                    <li><a href="#">menu item 2</a></li>
+                    <li><a href="#">menu item 3</a></li>
+                    <li><a href="#">menu item 4</a></li>
+                    <li><a href="#">menu item 5</a></li>
+                </ul>
+            </div>
+        </div>
     </header>

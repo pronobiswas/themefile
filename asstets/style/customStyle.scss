@@ -1,5 +1,6 @@
 @import 'variables';
-
+@import 'component/header';
+@import 'component/footer';
 :root {
     --primary-color: #1E3070;
 }
@@ -9,12 +10,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.hidden{display: none;}
 
 .myContiner {
     width: 100%;
     max-width: 1770px;
     margin: 0 auto;
-    // border: 1px dotted red;
+
 }
 
 ul,
@@ -29,78 +31,8 @@ a {
     text-decoration: none;
 }
 
-.contactBar {
-    background-color: var(--primary-color);
-    color: white;
-    width: 100%;
-    padding: 12px;
 
-    .contact_wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        gap: 32px;
-        span{font-size: 16px;}
-    }
-}
-header#header{
-    width: 100%;
-    position: absolute;
-    top: 95px;
-    left: 0;
-    nav{
-        width: 100%;
-        max-width: 1644px;
-        margin: 0 auto;
-        .nav_wrapper{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .navLogo{
-                width: 120px;
-                height: 120px;
-                img{object-fit: cover;width: 100%; height: 100%;}
-            }
-            .nav_menu{
-                .nav_menu_list{
-                    width: fit-content;
-                    background-color: white;
-                    border: 2px solid var(--primary-color);
-                    border-radius: 12px;
-                    display: flex;
-                    gap: 16px;
-                    .nav_menu_list_item{
-                        background-color: transparent;
-                        padding: 16px 22px;
-                        color: var(--primary-color);
-                        a{font-weight: 600;}
-                        border-radius: 8px;
-                        &:hover{
-                            background-color: var(--primary-color);
-                        }
-                        &:hover a{
-                            color: white;
-                        }
-                    }
-                    .nav_menu_list_item.active{
-                        background-color: var(--primary-color);
-                    }
-                }
-            }
-            .nav_Buttons{
-                button{
-                    border: none;
-                    outline: none;
-                    background-color: var(--primary-color);
-                    color: white;
-                    padding: 20px 14px;
-                    border-radius: 8px;
-                }
-            }
-        }
-    }
-}
+
 
 #homeBanner{
     width: 100%;
@@ -239,58 +171,6 @@ header#header{
                     .cardTag{}
                 }
             }
-        }
-    }
-}
-
-
-footer#footer{
-    width: 100%;
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: white;
-    .footerWrapper{
-        width: 100%;
-        .footernav{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            ul{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                gap: 20px;
-            }
-            .footerNavIcon{
-                display: flex;
-                gap: 10px;
-            }
-        }
-        .footerContent{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            .footerCol1{
-                display: flex;
-                gap: 120px;
-                .foterLogo{}
-                .footerContact{
-                    h6{
-                        width: fit-content;
-                        background-color: white;
-                        color: var(--primary-color);
-                        padding: 5px 12px;
-                    }
-                }
-            }
-            .footerCol2{}
-        }
-        .footNote{
-            display: flex;
-            align-items: center;
-            gap: 30px;
         }
     }
 }
