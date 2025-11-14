@@ -20,13 +20,13 @@ get_header();
         <div class="about_wrapper_container">
             <div class="about_banner">
                 <div class="aboutBannerImage">
-                    <img src="http://localhost/customtheme/wp-content/uploads/2025/11/c299de8890cca9449a8f4d365327b63d4f313711.jpg"
+                    <img src="http://localhost/smohamed/wp-content/uploads/2025/11/about_banner.jpg"
                         alt="about banner image">
                 </div>
             </div>
             <div class="about_content_wraper">
                 <div class="about_content">
-                    <h4>About Us</h4>
+                    <h3>About Us</h3>
                     <p>Welcome to our Physical Medicine & Rehabilitation and Pain Management practice, where care begins with listening. We believe that every patient deserves time, attention, and understanding — because lasting relief starts with truly knowing your story.</p>
                     <p>
                         Here, you’ll never feel rushed or unheard. We take the time to listen to your concerns, understand your symptoms, and learn how pain affects your daily life. Together, we build a plan that’s personalized to your goals, not just your diagnosis.
@@ -37,26 +37,29 @@ get_header();
                     <p>
                         We believe healing works best as a partnership. Our role is to guide and support you with the best possible care, while you remain the captain of your own journey. Our mission is simple: to help you move better, feel better, and live better — one patient, one story, one step at a time.
                     </p>
+                    <div class="btn_wrapper">
+                        <button>Meet our Providers</button>
+                    </div>
                 </div>
                 <div class="about_content_list">
                     <li>
-                        <h5>Patient-Centered Compassion</h5>
+                        <h4>Patient-Centered Compassion</h4>
                         <p>We believe that effective care begins with deep empathy and respect. We listen to understand not just your pain, but how it impacts your daily life, your work, and your relationships. Your goals—whether it’s walking without a cane or playing with your grandchildren—drive our treatment plan.</p>
                     </li>
                     <li>
-                        <h5>Evidence-Based, Integrative Care</h5>
+                        <h4>Evidence-Based, Integrative Care</h4>
                         <p>We commit to providing the safest, most effective, and personalized treatment. Our approach blends cutting-edge physical medicine techniques and interventional procedures with conservative and rehabilitative therapies. We focus on non-surgical solutions that promote lasting health and function.</p>
                     </li>
                     <li>
-                        <h5>Functional Restoration</h5>
+                        <h4>Functional Restoration</h4>
                         <p>Our ultimate goal is not just pain relief, but functional restoration. We see pain as a barrier, and our purpose is to help you move past that barrier. We empower you to regain mobility, strength, and independence so you can return to the activities you love.</p>
                     </li>
                     <li>
-                        <h5> Collaboration and Education</h5>
+                        <h4> Collaboration and Education</h4>
                         <p>We operate as a transparent team. This means we collaborate closely with your other providers and, most importantly, with you. We dedicate time to educate you about your condition and treatment options, ensuring you are an informed and active partner in your own recovery journey.</p>
                     </li>
                     <li>
-                        <h5>Safety and Responsibility</h5>
+                        <h4>Safety and Responsibility</h4>
                         <p>We practice the highest standards of safety, particularly in the responsible use of all medications and procedures. We are dedicated to avoiding dependence and minimizing risks while achieving effective, sustainable results.</p>
                     </li>
                 </div>

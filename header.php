@@ -45,7 +45,7 @@
                         <li class="nav_menu_list_item"><a href="<?php echo home_url('/conditions'); ?>">Conditions</a></li>
                         <li class="nav_menu_list_item"><a href="<?php echo home_url('/treatments'); ?>">Treatments</a></li>
                         <li class="nav_menu_list_item"><a href="<?php echo home_url('/patient-education'); ?>">Patient Education</a></li>
-                        <li class="nav_menu_list_item"><a href="<?php echo home_url('/office-locations'); ?>">Office Locations</a></li>
+                        <li class="nav_menu_list_item"><a href="<?php echo home_url('/office_locations'); ?>">Office Locations</a></li>
                         <li class="nav_menu_list_item"><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
                     </ul>
                  </div>
@@ -65,12 +65,13 @@
         <div id="nav_menu_mobile" class="hidden">
             <div class="mobileMenuWrapper">
                 <ul>
-                    <li><a href="#">menu item</a></li>
-                    <li><a href="#">menu item 1</a></li>
-                    <li><a href="#">menu item 2</a></li>
-                    <li><a href="#">menu item 3</a></li>
-                    <li><a href="#">menu item 4</a></li>
-                    <li><a href="#">menu item 5</a></li>
+                    <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/'); ?>">Home</a></li>
+                        <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/about-practice'); ?>">About Practice</a></li>
+                        <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/conditions'); ?>">Conditions</a></li>
+                        <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/treatments'); ?>">Treatments</a></li>
+                        <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/patient-education'); ?>">Patient Education</a></li>
+                        <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/office_locations'); ?>">Office Locations</a></li>
+                        <li class="mobile_nav_menu_list_item"><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
                 </ul>
             </div>
         </div>

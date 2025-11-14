@@ -20,7 +20,7 @@
                 <div class="specilist_card">
                     <div class="card_image">
 
-                            <img src="http://localhost/customtheme/wp-content/uploads/2025/11/14DA12D5-1263-4B13-BCB2-925D87481156-1.png" alt="doctor image">
+                            <img src="http://localhost/smohamed/wp-content/uploads/2025/11/75c.png" alt="doctor image">
 
                     </div>
                     <div class="card_content">
@@ -35,7 +35,7 @@
                 <div class="specilist_card">
                     <div class="card_image">
 
-                            <img src="http://localhost/customtheme/wp-content/uploads/2025/11/hgj.png" alt="doctor image">
+                            <img src="http://localhost/smohamed/wp-content/uploads/2025/11/334d516b9.png" alt="doctor image">
 
                     </div>
                     <div class="card_content">

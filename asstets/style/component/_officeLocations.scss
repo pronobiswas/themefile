@@ -1,0 +1,28 @@
+#ofice_location {
+    padding-top: 170px;
+    .office_location_wrapper {
+        .office_location_heading_wpapper {}
+
+        .office_location_map_wpapper {
+            padding: 48px 0;
+            .office_location_map_list {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                li {
+                    .map_card {
+                        width: 100%;
+                        max-width: 570px;
+                        aspect-ratio: 570/306;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: fill;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

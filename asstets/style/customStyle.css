@@ -905,13 +905,16 @@ footer#footer .footerWrapper .footNote {
 }
 #about_practice {
   width: 100%;
-  padding-top: 102px;
+  padding-top: 152px;
 }
 #about_practice .about_wrapper_container {
   width: 100%;
+  padding: 48px;
+  background-color: rgba(240, 249, 232, 0.4862745098);
 }
 #about_practice .about_wrapper_container .about_banner {
   width: 100%;
+  margin-bottom: 32px;
 }
 #about_practice .about_wrapper_container .about_banner .aboutBannerImage {
   width: 100%;
@@ -926,9 +929,38 @@ footer#footer .footerWrapper .footNote {
 }
 #about_practice .about_wrapper_container .about_content_wraper {
   width: 100%;
-  padding: 48px;
-  background-color: rgba(240, 249, 232, 0.4862745098);
 }
+#about_practice .about_wrapper_container .about_content_wraper .about_content h3 {
+  font-size: 44px;
+  margin-bottom: 32px;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper {
+  text-align: center;
+  padding: 32px 0;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content .btn_wrapper button {
+  border: none;
+  outline: none;
+  padding: 22px 118px;
+  background-color: var(--primary-color);
+  color: white;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content_list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  list-style-type: none;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content_list li {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#about_practice .about_wrapper_container .about_content_wraper .about_content_list li h4 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
 #homeBanner {
   width: 100%;
   height: calc(100vh - 100px);
@@ -2050,6 +2082,237 @@ footer#footer .footerWrapper .footNote {
     filter: grayscale(0);
   }
 }
+#About_Our_Physicians {
+  width: 100%;
+}
+#About_Our_Physicians .About_Our_Physicians_wrapper {
+  width: 100%;
+}
+
+.Book_Appointment_wrapper {
+  width: 100%;
+  background-color: rgba(240, 249, 232, 0.5019607843);
+  padding: 48px;
+}
+.Book_Appointment_wrapper .book_appintment_image {
+  width: 100%;
+}
+.Book_Appointment_wrapper .book_appintment_image img {
+  width: 100%;
+  aspect-ratio: 1674/759;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.Book_Appointment_wrapper h4 {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 32px;
+}
+.Book_Appointment_wrapper .book_appointment_btn_wrapper {
+  text-align: center;
+}
+.Book_Appointment_wrapper .book_appointment_btn_wrapper button {
+  border: none;
+  outline: none;
+  padding: 22px 85px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#doctor_section {
+  padding-top: 102px;
+}
+#doctor_section .doctor_section_wrapper {
+  width: 100%;
+}
+#doctor_section .doctor_section_wrapper .doctor_name_wrapper {
+  width: 100%;
+  padding: 48px;
+  background-color: rgba(109, 195, 28, 0.1450980392);
+  border: 1px solid rgba(109, 195, 28, 0.6588235294);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#doctor_section .doctor_section_wrapper .doctor_name_wrapper h2 {
+  font-size: 56px;
+  color: var(--primery-color);
+  font-weight: 700;
+}
+#doctor_section .doctor_section_wrapper .doctor_name_wrapper .line {
+  width: 100%;
+  max-width: 320px;
+  height: 5px;
+  background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+  border-radius: 50%;
+}
+#doctor_section .doctor_section_wrapper .doctor_details_wrapper {
+  width: 100%;
+  margin: 48px 0 80px 0;
+  padding: 48px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(233, 234, 241, 0.3137254902);
+}
+#doctor_section .doctor_section_wrapper .doctor_details_wrapper .doctor_details {
+  width: 100%;
+  max-width: 797px;
+}
+#doctor_section .doctor_section_wrapper .doctor_details_wrapper .doctor_details h3 {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 700px;
+  margin-bottom: 32px;
+}
+#doctor_section .doctor_section_wrapper .doctor_details_wrapper .doctor_image {
+  width: 100%;
+  max-width: 797px;
+  aspect-ratio: 797/759;
+}
+#doctor_section .doctor_section_wrapper .doctor_details_wrapper .doctor_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.traet_heading .treat_heading_wrapper {
+  width: 100%;
+  padding: 48px;
+  background-color: rgba(109, 195, 28, 0.1450980392);
+  border: 1px solid rgba(109, 195, 28, 0.6588235294);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.traet_heading .treat_heading_wrapper h2 {
+  font-size: 48px;
+  color: var(--primery-color);
+  font-weight: 700;
+  width: 100%;
+  border: 1px solid red;
+}
+.traet_heading .treat_heading_wrapper .line {
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid red;
+  height: 5px;
+  background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+  border-radius: 50%;
+}
+.traet_heading .treat_heading_wrapper p {
+  width: 100%;
+  border: 1px solid red;
+}
+
+#ofice_location {
+  padding-top: 170px;
+}
+#ofice_location .office_location_wrapper .office_location_map_wpapper {
+  padding: 48px 0;
+}
+#ofice_location .office_location_wrapper .office_location_map_wpapper .office_location_map_list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#ofice_location .office_location_wrapper .office_location_map_wpapper .office_location_map_list li .map_card {
+  width: 100%;
+  max-width: 570px;
+  aspect-ratio: 570/306;
+}
+#ofice_location .office_location_wrapper .office_location_map_wpapper .office_location_map_list li .map_card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+#contact_page {
+  padding-top: 152px;
+}
+#contact_page .contact_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#contact_page .contact_wrapper .user_short_action {
+  width: 100%;
+  max-width: 524px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 65px 48px;
+  border: 1px solid var(--primary-color);
+  background-color: #E9EAF1;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#contact_page .contact_wrapper .user_short_action .actionWrapper {
+  display: flex;
+  gap: 16px;
+}
+#contact_page .contact_wrapper .user_short_action .actionWrapper .actionIcon {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--primary-color);
+  padding: 12px;
+  border-radius: 50%;
+}
+#contact_page .contact_wrapper .contact_form_wrapper {
+  width: 100%;
+  max-width: 880px;
+}
+#contact_page .contact_wrapper .contact_form_wrapper #contact_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+#contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col {
+  width: 100%;
+}
+#contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col .input_wrapper {
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #757997;
+}
+#contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col .input_wrapper input {
+  width: 100%;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+}
+#contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col .input_wrapper input:focus {
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+}
+#contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col textarea {
+  width: 100%;
+  height: 200px;
+}
+
 :root {
   --primary-color: #1E3070;
 }
@@ -2066,6 +2329,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 1.2;
   color: var(--primary-color);
+}
+
+p {
+  margin: 0 0 0 0;
+}
+
+body {
+  width: 100%;
+  background-color: white !important;
 }
 
 .hidden {

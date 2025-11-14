@@ -12,10 +12,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 ?>
-
-<div>
-    <h1 style="padding:120px 0">this is A clean <b>Condition</b> page </h1>
-</div>
+<section id="Condition_page">
+    <div class="myContiner">
+        <div>
+            <?php get_template_part('template-parts/home/condition_we_treat', 'conditionWeTreat'); ?>
+             <?php get_template_part('template-parts/bookingConsultation', 'bookingConsultation'); ?>
+        </div>
+    </div>
+</section>
 
 
 

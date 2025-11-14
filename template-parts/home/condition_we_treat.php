@@ -10,11 +10,17 @@
     <div class="myContainer">
         <div class="conditionWeTreatWrapper">
             <!-- ====heading==== -->
-            <div class="heading">
-                <h2 class="title">Conditions We Treat</h2>
-                <div class="lineWrapper"></div>
-                <p class="desc">At our practice, we are dedicated to providing compassionate, personalized care to every patient. Our team combines advanced medical expertise with a commitment to understanding each individual’s unique needs. Whether you’re visiting for diagnosis, treatment, or ongoing care, we strive to create a comfortable environment where your health and well-being come first.</p>
-            </div>
+            <?php
+                    get_template_part(
+                        'template-parts/treatHeading',
+                        null,
+                        [
+                            'treat_heading'    => ' Conditions We Treat ',
+                            'treat_subHeading' => 'At our practice, we are dedicated to providing compassionate, personalized care to every patient. Our team combines advanced medical expertise with a commitment to understanding each individual’s unique needs. Whether you’re visiting for diagnosis, treatment, or ongoing care, we strive to create a comfortable environment where your health and well-being come first.',
+                        ]
+                    );
+            ?>
+            <!-- ====heading==== -->
             <!-- ====treatment galary=== -->
              <div class="treatmentGalary">
                 <div class="treatmentGlaryWrapper">
