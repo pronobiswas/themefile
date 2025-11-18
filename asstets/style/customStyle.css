@@ -962,6 +962,34 @@ footer#footer .footerWrapper .footNote {
   font-weight: 700;
 }
 
+.myBtn span {
+  position: relative;
+  z-index: 2;
+}
+
+.traet_heading .treat_heading_wrapper {
+  width: 100%;
+  padding: 48px;
+  background-color: rgba(109, 195, 28, 0.1450980392);
+  border: 1px solid rgba(109, 195, 28, 0.6588235294);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.traet_heading .treat_heading_wrapper .line {
+  width: 100%;
+  max-width: 320px;
+  height: 5px;
+  background: radial-gradient(#6DC31C, rgba(109, 195, 28, 0.4588235294), rgba(109, 195, 28, 0.0901960784), rgba(109, 195, 28, 0));
+  border-radius: 50%;
+}
+.traet_heading .treat_heading_wrapper p {
+  width: 100%;
+}
+
 #homeBanner {
   width: 100%;
   height: calc(100vh - 100px);
@@ -991,13 +1019,48 @@ footer#footer .footerWrapper .footNote {
 #homeBanner .banner_content_wrapper .banner_content p {
   padding: 20px 0 40px 0;
 }
-#homeBanner .banner_content_wrapper .banner_content .btnWrapper button {
-  border: none;
-  outline: none;
-  background-color: var(--primary-color);
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1E3070;
   color: white;
-  padding: 20px 14px;
   border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#homeBanner .banner_content_wrapper .banner_content .btnWrapper .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 #aboutPractice {
@@ -1197,7 +1260,7 @@ footer#footer .footerWrapper .footNote {
   border-radius: 50%;
 }
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header span {
-  font-size: clamp(16px, 10px + 1vw, 24px);
+  font-size: clamp(16px, 20px + 1vw, 24px);
 }
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header h3 {
   font-size: clamp(18px, 16px + 3vw, 56px);
@@ -1207,17 +1270,19 @@ footer#footer .footerWrapper .footNote {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: space-evenly;
   gap: 100px;
+  padding: 40px;
 }
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card {
   width: 100%;
   max-width: 524px;
+  border-radius: 10px;
 }
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image {
   width: 100%;
   aspect-ratio: 524/331;
+  border: 1px solid transparent;
   background-color: #E9EAF1;
   border-radius: 10px 10px 0 0;
   position: relative;
@@ -1230,6 +1295,13 @@ footer#footer .footerWrapper .footNote {
   left: 50%;
   transform: translateX(-50%);
 }
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card:hover {
+  box-shadow: 0 0 10px 0 rgba(128, 128, 128, 0.815);
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card:hover .card_image {
+  background-color: #e7e9fa;
+  box-shadow: inset 0 0 10px 0 #68749F;
+}
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content {
   width: 100%;
   padding: 24px;
@@ -1237,16 +1309,52 @@ footer#footer .footerWrapper .footNote {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content p {
+  margin: 15px 0 20px 0;
+  font-size: 1rem;
+  color: white;
+}
 #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper {
   display: flex;
   justify-content: space-between;
 }
-#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper button {
-  border: none;
-  outline: none;
-  padding: 20px 67px;
-  background-color: var(--primary-color);
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn {
+  display: inline-block;
+  padding: 12px 40px;
+  background-color: #1E3070;
   color: white;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a30bd;
+  cursor: pointer;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover {
+  background-color: white;
+  color: #1E3070;
+  border: 1px solid rgba(30, 48, 112, 0.568627451);
+  outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+  transition: 0.2s all linear;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition: 0.2s all linear;
+}
+#Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover::after {
+  width: 100%;
+  opacity: 1;
 }
 
 @media screen and (max-width: 576px) {
@@ -1428,6 +1536,119 @@ footer#footer .footerWrapper .footNote {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  #Meet_Our_Expert_Doctor {
+    background: linear-gradient(#E9EAF1, rgba(109, 195, 28, 0.0196078431));
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 102px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header {
+    text-align: center;
+    padding: 80px 10px;
+    position: relative;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(rgba(109, 195, 28, 0.3215686275), rgba(109, 195, 28, 0.1843137255), rgba(109, 195, 28, 0.0666666667), rgba(109, 195, 28, 0.0156862745), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header span {
+    font-size: clamp(16px, 20px + 1vw, 24px);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header h3 {
+    font-size: clamp(18px, 16px + 3vw, 56px);
+    color: var(--primary-color);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 140px;
+    padding: 40px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card {
+    width: 100%;
+    max-width: 524px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image {
+    width: 100%;
+    aspect-ratio: 524/331;
+    background-color: #E9EAF1;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image img {
+    width: 80%;
+    aspect-ratio: 460/534;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content {
+    width: 100%;
+    padding: 24px;
+    background-color: #68749F;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content p {
+    margin: 15px 0 20px 0;
+    font-size: 1rem;
+    color: white;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #1E3070;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
   }
 }
 @media screen and (min-width: 576px) {
@@ -1618,6 +1839,119 @@ footer#footer .footerWrapper .footNote {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  #Meet_Our_Expert_Doctor {
+    background: linear-gradient(#E9EAF1, rgba(109, 195, 28, 0.0196078431));
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 102px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header {
+    text-align: center;
+    padding: 80px 10px;
+    position: relative;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(rgba(109, 195, 28, 0.3215686275), rgba(109, 195, 28, 0.1843137255), rgba(109, 195, 28, 0.0666666667), rgba(109, 195, 28, 0.0156862745), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header span {
+    font-size: clamp(16px, 20px + 1vw, 24px);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header h3 {
+    font-size: clamp(18px, 16px + 3vw, 56px);
+    color: var(--primary-color);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 140px;
+    padding: 40px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card {
+    width: 100%;
+    max-width: 524px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image {
+    width: 100%;
+    aspect-ratio: 524/331;
+    background-color: #E9EAF1;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image img {
+    width: 80%;
+    aspect-ratio: 460/534;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content {
+    width: 100%;
+    padding: 24px;
+    background-color: #68749F;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content p {
+    margin: 15px 0 20px 0;
+    font-size: 1rem;
+    color: white;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #1E3070;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 768px) {
   #homeBanner {
@@ -1801,6 +2135,120 @@ footer#footer .footerWrapper .footNote {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  #Meet_Our_Expert_Doctor {
+    background: linear-gradient(#E9EAF1, rgba(109, 195, 28, 0.0196078431));
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 102px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header {
+    text-align: center;
+    padding: 80px 10px;
+    position: relative;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(rgba(109, 195, 28, 0.3215686275), rgba(109, 195, 28, 0.1843137255), rgba(109, 195, 28, 0.0666666667), rgba(109, 195, 28, 0.0156862745), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header span {
+    font-size: clamp(16px, 20px + 1vw, 24px);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header h3 {
+    font-size: clamp(18px, 16px + 3vw, 56px);
+    color: var(--primary-color);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 40px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card {
+    width: 100%;
+    max-width: 524px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image {
+    width: 100%;
+    aspect-ratio: 524/331;
+    background-color: #E9EAF1;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image img {
+    width: 80%;
+    aspect-ratio: 460/534;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content {
+    width: 100%;
+    padding: 24px;
+    background-color: #68749F;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content p {
+    margin: 15px 0 20px 0;
+    font-size: 1rem;
+    color: white;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #1E3070;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 1024px) {
   #homeBanner {
@@ -1943,6 +2391,120 @@ footer#footer .footerWrapper .footNote {
   #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
     height: 300px;
     filter: grayscale(0);
+  }
+  #Meet_Our_Expert_Doctor {
+    background: linear-gradient(#E9EAF1, rgba(109, 195, 28, 0.0196078431));
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 102px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header {
+    text-align: center;
+    padding: 80px 10px;
+    position: relative;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(rgba(109, 195, 28, 0.3215686275), rgba(109, 195, 28, 0.1843137255), rgba(109, 195, 28, 0.0666666667), rgba(109, 195, 28, 0.0156862745), rgba(109, 195, 28, 0));
+    border-radius: 50%;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header span {
+    font-size: clamp(16px, 20px + 1vw, 24px);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_header h3 {
+    font-size: clamp(18px, 16px + 3vw, 56px);
+    color: var(--primary-color);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 140px;
+    padding: 40px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card {
+    width: 100%;
+    max-width: 524px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image {
+    width: 100%;
+    aspect-ratio: 524/331;
+    background-color: #E9EAF1;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_image img {
+    width: 80%;
+    aspect-ratio: 460/534;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content {
+    width: 100%;
+    padding: 24px;
+    background-color: #68749F;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content p {
+    margin: 15px 0 20px 0;
+    font-size: 1rem;
+    color: white;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #1E3070;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px #0a30bd;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover {
+    background-color: white;
+    color: #1E3070;
+    border: 1px solid rgba(30, 48, 112, 0.568627451);
+    outline: 1px solid rgba(10, 49, 189, 0.8235294118);
+    transition: 0.2s all linear;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(30, 48, 112, 0.0392156863), rgba(125, 153, 255, 0.231372549), rgba(30, 48, 112, 0.0078431373));
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition: 0.2s all linear;
+  }
+  #Meet_Our_Expert_Doctor .specilist_wrapper .specilist_card_wrapper .specilist_card .card_content .card_btn_wrapper .myBtn:hover::after {
+    width: 100%;
+    opacity: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2127,7 +2689,6 @@ footer#footer .footerWrapper .footNote {
 
 #doctor_section {
   padding-top: 102px;
-  background-color: #6DC31C;
 }
 #doctor_section .doctor_section_wrapper {
   width: 100%;
@@ -2367,11 +2928,9 @@ footer#footer .footerWrapper .footNote {
   height: 200px;
 }
 
-.myBtn {
-  display: inline-block;
-  padding: 12px;
-  background-color: #1E3070;
-  color: white;
+.myBtn span {
+  position: relative;
+  z-index: 2;
 }
 
 .traet_heading .treat_heading_wrapper {
@@ -2456,4 +3015,8 @@ ol {
 a {
   display: inline-block;
   text-decoration: none;
+}
+
+#Condition_page {
+  padding-top: 102px;
 }/*# sourceMappingURL=customStyle.css.map */
