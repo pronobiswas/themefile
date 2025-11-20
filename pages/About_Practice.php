@@ -20,7 +20,7 @@ get_header();
         <div class="about_wrapper_container">
             <div class="about_banner">
                 <div class="aboutBannerImage">
-                    <img src="http://localhost/smohamed/wp-content/uploads/2025/11/about_banner.jpg"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about_banner.jpg"
                         alt="about banner image">
                 </div>
             </div>

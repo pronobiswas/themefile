@@ -21,6 +21,7 @@ const exercise_document_wrapper = document.querySelector('#exercise_document_wra
 const faq = document.getElementById('faq');
 
 const FrequentQA_content_list_item = document.querySelectorAll('.FrequentQA_content_list_item');
+const list_item_description = document.querySelectorAll('.list_item_description');
 
 console.log(FrequentQA_content_list_item);
 
@@ -41,6 +42,11 @@ education_select.addEventListener('change', (e) => {
 
 FrequentQA_content_list_item.forEach((elem,idx)=>{
     elem.addEventListener('click' , (e)=>{
-        console.log(e.currentTarget);
+        const element = e.currentTarget;
+        let desc = element.querySelector('.list_item_description');
+        if(desc){
+            desc.classList.toggle('colpse');
+        }
+        
     })
 });

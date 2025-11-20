@@ -1,8 +1,10 @@
-#PatientEducation{
+#PatientEducation {
     padding-top: 152px;
-    .Patient_Education_wrapper{
+
+    .Patient_Education_wrapper {
         width: 100%;
-        .selectOption{
+
+        .selectOption {
             width: 100%;
             max-width: 873px;
             margin: 0 auto;
@@ -10,14 +12,16 @@
             border: 1px solid rgba(0, 128, 0, 0.39);
             background-color: #41c74123;
             border-radius: 10px;
-            select{
+
+            select {
                 width: 100%;
                 border: none;
                 outline: none;
                 background-color: transparent;
             }
         }
-        #exercise_document_wrapper{
+
+        #exercise_document_wrapper {
             width: 100%;
             padding: 38px;
             display: flex;
@@ -25,63 +29,90 @@
             justify-content: center;
             background-color: #E9EAF173;
             border-radius: 32px;
-            .exercise_document_item{
+
+            .exercise_document_item {
                 width: 100%;
                 max-width: 873px;
                 aspect-ratio: 873/1319;
-                img{
+
+                img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
             }
         }
-        
+
     }
-    
+
 }
-.hidden{display: none !important;}
+
+.hidden {
+    display: none !important;
+}
 
 // ================================================
-    .FrequentQA_part{
-        width: 100%;
-        .FrequentQA_heading_wrapper{
-            text-align: center;
-            padding: 48px;
-            background-color: #8acf494d;
-            border: 1px solid #8ACF49;
-            border-radius: 10px;
-            h4{
-                font-size: 32px;
-            }
+.FrequentQA_part {
+    width: 100%;
+
+    .FrequentQA_heading_wrapper {
+        text-align: center;
+        padding: 20px 48px;
+        background-color: #8acf494d;
+        border: 1px solid #8ACF49;
+        border-radius: 10px;
+
+        h4 {
+            font-size: 32px;
         }
-        .FrequentQA_content_wrapper{
-            .FrequentQA_content_row{
-                width: 100%;
-                .FrequentQA_content_list{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-                    .FrequentQA_content_list_item{
-                        border: 2px solid gray;
-                        width: 100%;
+    }
+
+    .FrequentQA_content_wrapper {
+        .FrequentQA_content_row {
+            width: 100%;
+
+            .FrequentQA_content_list {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .FrequentQA_content_list_item {
+                    border: 2px solid gray;
+                    width: 100%;
+                    padding: 30px 57px;
+                    border-radius: 20px;
+                    .list_item_heading {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        padding: 30px 57px;
-                        border-radius: 20px;
-                        .FrequentQA_content_list_item_text{
+                        .FrequentQA_content_list_item_text {
                             display: flex;
                             align-items: center;
                             gap: 20px;
-                            span{
+    
+                            span {
                                 font-size: 60px;
                             }
                         }
-                        .FrequentQA_content_list_item_icon{}
+    
+                        .FrequentQA_content_list_item_icon {
+                            width: fit-content;
+                        }
+                    }
+
+
+                    .list_item_description {
+                        width: 100%;
                     }
                 }
             }
         }
     }
-    // ================================================
+}
+.colpse{
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    display: none;
+}
+// ================================================

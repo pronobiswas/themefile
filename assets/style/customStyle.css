@@ -3510,7 +3510,7 @@ footer#footer .footerWrapper .footNote {
 }
 .FrequentQA_part .FrequentQA_heading_wrapper {
   text-align: center;
-  padding: 48px;
+  padding: 20px 48px;
   background-color: rgba(138, 207, 73, 0.3019607843);
   border: 1px solid #8ACF49;
   border-radius: 10px;
@@ -3529,20 +3529,37 @@ footer#footer .footerWrapper .footNote {
 .FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item {
   border: 2px solid gray;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 30px 57px;
   border-radius: 20px;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .FrequentQA_content_list_item_text {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_text {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .FrequentQA_content_list_item_text span {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_text span {
   font-size: 60px;
 }
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_icon {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_description {
+  width: 100%;
+}
+
+.colpse {
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+  display: none;
+}
+
 #contact_page {
   padding-top: 152px;
 }

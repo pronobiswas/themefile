@@ -37,7 +37,8 @@
             <div class="footerContent">
               <div class="footerCol1">
                 <div class="foterLogo">
-                  <img src="http://localhost/smohamed/wp-content/uploads/2025/10/header_log.png" alt="">
+                  
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/foooter_logo.png" alt="foooter_logo.png">
                 </div>
                 <div class="footerContact">
                   <h6>Contact us:</h6>
@@ -51,7 +52,7 @@
                 </div>
               </div>
               <div class="footerCol2">
-                <img src="http://localhost/smohamed/wp-content/uploads/2025/10/map-box.png" alt=" footer map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.1301050501215!2d-74.03432400007401!3d40.615238643886215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24f88eb97ece9%3A0xe81899501d125c5b!2s9711%203rd%20Ave%202nd%20floor%2C%20Brooklyn%2C%20NY%2011209%2C%20USA!5e0!3m2!1sen!2sbd!4v1763640823473!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
             <div class="footNote">
