@@ -1,58 +1,8 @@
 #PatientEducation {
-    padding-top: 152px;
+    padding: 152px 20px;
 
     .Patient_Education_wrapper {
         width: 100%;
-
-        .selectOption {
-            width: 100%;
-            max-width: 873px;
-            margin: 0 auto;
-            padding: 24px 48px;
-            border: 1px solid rgba(0, 128, 0, 0.39);
-            background-color: #41c74123;
-            border-radius: 10px;
-
-            select {
-                width: 100%;
-                border: none;
-                outline: none;
-                background-color: transparent;
-                // appearance: none;
-
-                option {
-                    border: 1px solid rgba(0, 128, 0, 0.39);
-                    background-color: #41c74123;
-                    border-top: none;
-                    border-radius: 8px;
-                    padding: 8px;
-                }
-            }
-
-        }
-
-        #exercise_document_wrapper {
-            width: 100%;
-            padding: 38px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #E9EAF173;
-            border-radius: 32px;
-
-            .exercise_document_item {
-                width: 100%;
-                max-width: 873px;
-                aspect-ratio: 873/1319;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-
     }
 
 }
@@ -61,14 +11,135 @@
     display: none !important;
 }
 
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#home_exercise_program {
+    width: 100%;
+
+    .home_exercise_program_wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .home_exercise_program_header {
+            width: 100%;
+            max-width: 873px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 20px;
+
+            .select_option {
+                width: 100%;
+                padding: 24px 48px;
+                border: 1px solid #6DC31C;
+                background-color: #F0F9E873;
+                border-radius: 16px;
+
+                select {
+                    width: 100%;
+                    font-size: 32px;
+                    font-weight: 500;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+
+                    option {
+                        font-size: 20px;
+                        border: none !important;
+                        border-radius: 12px;
+                        background-color: #F0F9E873;
+                    }
+                }
+            }
+
+            button {
+                background-color: var(--primary-color);
+                color: white;
+                font-size: 20px;
+                padding: 6px 12px;
+                border: none;
+                outline: none;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        }
+
+        .home_exercise_program_content {
+            margin-top: 50px;
+
+            .pdf_viewer {
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
 // ================================================
 .FrequentQA_part {
     width: 100%;
     padding: 50px 20px;
 
+    .frequent_select_option_wrapper {
+        width: 100%;
+        max-width: 873px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+
+        .frequent_select_option {
+            width: 100%;
+            padding: 24px 48px;
+            border-radius: 16px;
+            border: 1px solid #6DC31C;
+            background-color: #F0F9E873;
+
+            select {
+                width: 100%;
+                font-size: 32px;
+                color: var(--primary-color);
+                font-weight: 500;
+                background-color: transparent;
+                border: none;
+                &:focus{
+                    border: none;
+                    outline: none;
+                }
+
+                option {
+                    font-size: 20px;
+                    font-weight: 400;
+                    border: 1px solid #6DC31C;
+                    background-color: #F0F9E873;
+                }
+            }
+
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 20px;
+            padding: 6px 12px;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    }
+
     .FrequentQA_heading_wrapper {
         text-align: center;
         padding: 20px 48px;
+        margin-top: 40px;
         background-color: #8acf494d;
         border: 1px solid #8ACF49;
         border-radius: 10px;
@@ -83,26 +154,37 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 30px;
 
         .FrequentQA_content_row {
             width: 100%;
-
+            padding: 48px;
+            background-color: #E9EAF173;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border-radius: 20px;
             h5 {
+                width: 100%;
+                max-width: 1200px;
                 font-size: 32px;
                 margin-bottom: 12px;
             }
-
             .FrequentQA_content_list {
+                width: 100%;
+                max-width: 1200px;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
 
                 .FrequentQA_content_list_item {
-                    border: 2px solid gray;
                     width: 100%;
                     padding: 30px 57px;
+                    border: 1px solid #1E3070;
                     border-radius: 20px;
+                    box-shadow: 0px 4px 0px 0px #1E3070;
 
                     .list_item_heading {
                         display: flex;
@@ -116,21 +198,35 @@
 
                             span {
                                 font-size: 60px;
+                                color: #1E3070;
                             }
 
                             p {
                                 font-size: 24px;
+                                color: #1E3070;
                             }
                         }
 
                         .FrequentQA_content_list_item_icon {
-                            width: fit-content;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid #1E3070;
+                            border-radius: 50%;
+                            span{
+                                margin: 0;
+                                padding: 0;
+                                line-height: 0.5;
+                            }
                         }
                     }
 
 
                     .list_item_description {
                         width: 100%;
+                        color: #1E3070;
                     }
                 }
             }

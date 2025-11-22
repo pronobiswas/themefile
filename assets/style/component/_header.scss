@@ -68,7 +68,7 @@ header#header {
                         border-radius: 8px;
 
                         &:hover {
-                            background-color: var(--primary-color);
+                            background: linear-gradient(145deg, #213ea7, #213ea7, #395CD6);
                         }
 
                         &:hover a {
@@ -194,39 +194,6 @@ header#header {
 
                 .nav_menu {
                     display: none;
-
-                    .nav_menu_list {
-                        width: fit-content;
-                        background-color: #E9EAF1;
-                        border: 1px solid var(--primary-color);
-                        border-radius: 12px;
-                        display: flex;
-                        gap: 16px;
-
-                        .nav_menu_list_item {
-                            background-color: transparent;
-                            padding: 16px 22px;
-                            color: var(--primary-color);
-
-                            a {
-                                font-weight: 600;
-                            }
-
-                            border-radius: 8px;
-
-                            &:hover {
-                                background-color: var(--primary-color);
-                            }
-
-                            &:hover a {
-                                color: white;
-                            }
-                        }
-
-                        .nav_menu_list_item.active {
-                            background-color: var(--primary-color);
-                        }
-                    }
                 }
 
                 .nav_Buttons {
@@ -472,7 +439,7 @@ header#header {
                             border-radius: 8px;
 
                             &:hover {
-                                background-color: var(--primary-color);
+                                background: linear-gradient(145deg, #213ea7, #213ea7, #395CD6);
                             }
 
                             &:hover a {
@@ -502,7 +469,7 @@ header#header {
 
                     .mobile_menu_icon_wrapper {
                         display: none;
-                        
+
                     }
                 }
             }
@@ -588,7 +555,7 @@ header#header {
                             border-radius: 8px;
 
                             &:hover {
-                                background-color: var(--primary-color);
+                                background: linear-gradient(145deg, #213ea7, #213ea7, #395CD6);
                             }
 
                             &:hover a {
@@ -696,7 +663,7 @@ header#header {
                             border-radius: 8px;
 
                             &:hover {
-                                background-color: var(--primary-color);
+                                background: linear-gradient(145deg, #213ea7, #213ea7, #395CD6);
                             }
 
                             &:hover a {

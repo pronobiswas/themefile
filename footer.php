@@ -52,9 +52,11 @@
                 </div>
               </div>
               <div class="footerCol2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.1301050501215!2d-74.03432400007401!3d40.615238643886215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24f88eb97ece9%3A0xe81899501d125c5b!2s9711%203rd%20Ave%202nd%20floor%2C%20Brooklyn%2C%20NY%2011209%2C%20USA!5e0!3m2!1sen!2sbd!4v1763640823473!5m2!1sen!2sbd" width="100%" height="350" style="border:0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.1301050501215!2d-74.03432400007401!3d40.615238643886215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24f88eb97ece9%3A0xe81899501d125c5b!2s9711%203rd%20Ave%202nd%20floor%2C%20Brooklyn%2C%20NY%2011209%2C%20USA!5e0!3m2!1sen!2sbd!4v1763640823473!5m2!1sen!2sbd" width="100%" height="350" style="border:0px; border-radius:20px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
+                <hr>
+                <br>
             <div class="footNote">
               <span>© 2025 Khairul islam. All Rights Reserved.</span>
               <span>Support</span>
