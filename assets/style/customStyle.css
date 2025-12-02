@@ -3714,7 +3714,7 @@ footer#footer .footerWrapper .footNote {
 }
 
 #PatientEducation {
-  padding: 152px 20px;
+  padding: 152px 20px 80px 20px;
 }
 #PatientEducation .Patient_Education_wrapper {
   width: 100%;
@@ -3726,9 +3726,11 @@ footer#footer .footerWrapper .footNote {
 
 #home_exercise_program {
   width: 100%;
+  height: 100%;
 }
 #home_exercise_program .home_exercise_program_wrapper {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3773,13 +3775,74 @@ footer#footer .footerWrapper .footNote {
   cursor: pointer;
 }
 #home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content {
+  width: 100%;
+  height: 100%;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
-#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .pdf_viewer img {
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1133/1713;
+  max-width: 1120px;
+  perspective: 1500px;
+}
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .slider-container .slider-page {
+  position: absolute;
+  aspect-ratio: 1133/1713;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 1.5s all linear;
+  transform-origin: left top;
+}
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .slider-container .slider-page img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .slider-container .page-1 {
+  background-color: lightblue;
+}
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .slider-container .page-2 {
+  background-color: lightgreen;
+}
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .slider-container .page-3 {
+  background-color: lightcoral;
+}
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .prev-btn, #home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .next-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .prev-btn {
+  left: 10px;
+}
+#home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .next-btn {
+  right: 10px;
 }
 
 .FrequentQA_part {
@@ -3859,45 +3922,51 @@ footer#footer .footerWrapper .footNote {
   gap: 20px;
   border-radius: 20px;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row h5 {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content h5 {
   width: 100%;
   max-width: 1200px;
   font-size: 32px;
   margin-bottom: 12px;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content .FrequentQA_content_list {
   width: 100%;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content .FrequentQA_content_list .FrequentQA_content_list_item {
   width: 100%;
   padding: 30px 57px;
   border: 1px solid #1E3070;
   border-radius: 20px;
   box-shadow: 0px 4px 0px 0px #1E3070;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_text {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_text {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_text span {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_text span {
   font-size: 60px;
   color: #1E3070;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_text p {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_text p {
   font-size: 24px;
   color: #1E3070;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_icon {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_icon {
   width: 40px;
   height: 40px;
   display: flex;
@@ -3906,14 +3975,43 @@ footer#footer .footerWrapper .footNote {
   border: 1px solid #1E3070;
   border-radius: 50%;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_icon span {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content .FrequentQA_content_list .FrequentQA_content_list_item .list_item_heading .FrequentQA_content_list_item_icon span {
   margin: 0;
   padding: 0;
   line-height: 0.5;
 }
-.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content_list .FrequentQA_content_list_item .list_item_description {
+.FrequentQA_part .FrequentQA_content_wrapper .FrequentQA_content_row .FrequentQA_content .FrequentQA_content_list .FrequentQA_content_list_item .list_item_description {
   width: 100%;
   color: #1E3070;
+}
+.FrequentQA_part .FrequentQA_footer_wrapper {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 24px 48px;
+  margin-top: 100px;
+  background-color: rgba(138, 207, 73, 0.3019607843);
+  border: 1px solid #8ACF49;
+  border-radius: 24px;
+}
+.FrequentQA_part .FrequentQA_footer_wrapper div {
+  text-align: center;
+  color: var(--primary-color);
+}
+.FrequentQA_part .FrequentQA_footer_wrapper div h3 {
+  font-size: 36px;
+}
+.FrequentQA_part .FrequentQA_footer_wrapper div p {
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+.FrequentQA_part .FrequentQA_footer_wrapper div .myBtn {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 12px 48px;
+  margin: 0 auto;
+  background-color: #1E3070;
+  color: white;
 }
 
 .colpse {
