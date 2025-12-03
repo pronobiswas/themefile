@@ -6,14 +6,14 @@
         <div class="footerWrapper">
             <div class="footernav">
                 <ul>
-                    <li>About Practice</li>
-                    <li>Treatments</li>
-                    <li>Patient Education</li>
-                    <li>Contact</li>
+                    <li><a href="#" class="footer_link">About Practice</a></li>
+                    <li><a href="#" class="footer_link">Treatments</a></li>
+                    <li><a href="#" class="footer_link">Patient Education</a></li>
+                    <li><a href="#" class="footer_link">Contact</a></li>
                 </ul>
                 <div class="footerNavIcon">
                     <span>
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="social_icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="15" r="15" fill="white" />
                             <path d="M8.22178 22.0586H11.3059V12.0742H8.22178V22.0586Z" fill="#1E3070" />
                             <path
@@ -25,12 +25,11 @@
                         </svg>
                     </span>
                     <span>
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="social_icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M30 15.0913C30 6.75456 23.2863 0 15 0C6.71371 0 0 6.75456 0 15.0913C0 22.6369 5.44355 28.9047 12.6411 30V19.4726H8.83064V15.0913H12.6411V11.8053C12.6411 8.03245 14.879 5.90264 18.2661 5.90264C19.9597 5.90264 21.6532 6.2069 21.6532 6.2069V9.91886H19.7782C17.9032 9.91886 17.2984 11.0751 17.2984 12.2921V15.0913H21.4718L20.8065 19.4726H17.2984V30C24.496 28.9047 30 22.6369 30 15.0913Z"
                                 fill="white" />
                         </svg>
-
                     </span>
                 </div>
             </div>
@@ -59,9 +58,9 @@
                 <br>
             <div class="footNote">
               <span>© 2025 Khairul islam. All Rights Reserved.</span>
-              <span>Support</span>
-              <span>Privacy policy</span>
-              <span>Terms of Condition</span>
+              <span><a href="#" class="footer_link">Support</a></span>
+              <span><a href="#" class="footer_link">Privacy policy</a></span>
+              <span><a href="#" class="footer_link">Terms of Condition</a></span>
             </div>
         </div>
     </div>

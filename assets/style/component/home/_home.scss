@@ -162,80 +162,78 @@
 #consitionWeTreat {
     width: 100%;
 
-    .conditionWeTreatWrapper {
+    .conditionWeTreatWrapper {}
+}
 
+.treatmentGalary {
+    padding-top: 50px;
 
-        .treatmentGalary {
-            padding-top: 50px;
+    .treatmentGlaryWrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
 
-            .treatmentGlaryWrapper {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: auto;
-                gap: 20px;
-
-                .glaryItem {
-                    .glaryCard {
-                        width: 100%;
-                        min-width: 300px;
-                        max-width: 425px;
-                        height: 556px;
-                        position: relative;
-
-                        .glaryImage {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 556px;
-                            border-radius: 12px;
-                            z-index: 3;
-                            filter: grayscale(1);
-                            transition: .3s all linear;
-                        }
-
-                        .glaryContent {
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 256px;
-                            padding: 15px 0 0 0;
-                            z-index: 1;
-                            overflow-y: scroll;
-                            scrollbar-width: none;
-                            -ms-overflow-style: none;
-
-                            &::-webkit-scrollbar {
-                                display: none;
-                            }
-                        }
-
-                        &:hover .glaryImage {
-                            height: 300px;
-                            filter: grayscale(0);
-                        }
-
-                    }
-
-                    .cardTag {
-                        width: 100%;
-                        font-size: 28px;
-                        padding: 5px;
-                        text-align: left;
-                    }
-                }
-            }
-
-            .view_more_btn {
+        .glaryItem {
+            .glaryCard {
                 width: 100%;
-                padding: 20px 0;
-                text-align: center;
+                min-width: 300px;
+                max-width: 425px;
+                height: 556px;
+                position: relative;
 
-                .myBtn{
-                    @include myBtn(20px , 80px)
+                .glaryImage {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 556px;
+                    border-radius: 12px;
+                    z-index: 3;
+                    filter: grayscale(1);
+                    transition: .3s all linear;
                 }
+
+                .glaryContent {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 256px;
+                    padding: 15px 0 0 0;
+                    z-index: 1;
+                    overflow-y: scroll;
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+
+                &:hover .glaryImage {
+                    height: 300px;
+                    filter: grayscale(0);
+                }
+
             }
+
+            .cardTag {
+                width: 100%;
+                font-size: 28px;
+                padding: 5px;
+                text-align: left;
+            }
+        }
+    }
+
+    .view_more_btn {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+
+        .myBtn {
+            @include myBtn(20px, 80px)
         }
     }
 }
@@ -554,53 +552,56 @@
                 }
             }
 
-            .treatmentGalary {
-                .treatmentGlaryWrapper {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    grid-template-rows: auto;
-                    gap: 20px;
 
-                    .glaryItem {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
+        }
+    }
+    .treatmentGalary {
+        .treatmentGlaryWrapper {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
 
-                        .glaryCard {
-                            width: 100%;
-                            min-width: 300px;
-                            max-width: 425px;
-                            height: 556px;
-                            position: relative;
+            .glaryItem {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
 
-                            .glaryImage {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 556px;
-                                z-index: 3;
-                                transition: .3s all linear;
-                            }
+                .glaryCard {
+                    width: 100%;
+                    min-width: 300px;
+                    max-width: 425px;
+                    height: 556px;
+                    position: relative;
 
-                            .glaryContent {
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 256px;
-                                z-index: 1;
-                            }
-
-                            &:hover .glaryImage {
-                                height: 300px;
-                            }
-
-                        }
-
-                        .cardTag {text-align: center;}
+                    .glaryImage {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 556px;
+                        z-index: 3;
+                        transition: .3s all linear;
                     }
+
+                    .glaryContent {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 256px;
+                        z-index: 1;
+                    }
+
+                    &:hover .glaryImage {
+                        height: 300px;
+                    }
+
+                }
+
+                .cardTag {
+                    text-align: center;
                 }
             }
         }
@@ -906,55 +907,59 @@
                 }
             }
 
-            .treatmentGalary {
-                .treatmentGlaryWrapper {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    grid-template-rows: auto;
-                    gap: 20px;
 
-                    .glaryItem {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
+        }
+    }
 
-                        .glaryCard {
-                            width: 100%;
-                            min-width: 300px;
-                            max-width: 425px;
-                            height: 556px;
-                            position: relative;
+    .treatmentGalary {
+        .treatmentGlaryWrapper {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
 
-                            .glaryImage {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 556px;
-                                z-index: 3;
-                                filter: grayscale(1);
-                                transition: .3s all linear;
-                            }
+            .glaryItem {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
 
-                            .glaryContent {
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 256px;
-                                z-index: 1;
-                            }
+                .glaryCard {
+                    width: 100%;
+                    min-width: 300px;
+                    max-width: 425px;
+                    height: 556px;
+                    position: relative;
 
-                            &:hover .glaryImage {
-                                height: 300px;
-                                filter: grayscale(0);
-                            }
-
-                        }
-
-                        .cardTag {text-align: center;}
+                    .glaryImage {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 556px;
+                        z-index: 3;
+                        filter: grayscale(1);
+                        transition: .3s all linear;
                     }
+
+                    .glaryContent {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 256px;
+                        z-index: 1;
+                    }
+
+                    &:hover .glaryImage {
+                        height: 300px;
+                        filter: grayscale(0);
+                    }
+
+                }
+
+                .cardTag {
+                    text-align: center;
                 }
             }
         }
@@ -1253,50 +1258,55 @@
                 }
             }
 
-            .treatmentGalary {
-                .treatmentGlaryWrapper {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows: auto;
-                    gap: 20px;
 
-                    .glaryItem {
-                        .glaryCard {
-                            width: 100%;
-                            min-width: 300px;
-                            max-width: 425px;
-                            height: 556px;
-                            position: relative;
+        }
+    }
 
-                            .glaryImage {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 556px;
-                                z-index: 3;
-                                filter: grayscale(1);
-                                transition: .3s all linear;
-                            }
+    .treatmentGalary {
+        .treatmentGlaryWrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
 
-                            .glaryContent {
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 256px;
-                                z-index: 1;
-                            }
+            .glaryItem {
+                .glaryCard {
+                    width: 100%;
+                    min-width: 300px;
+                    max-width: 425px;
+                    height: 556px;
+                    position: relative;
 
-                            &:hover .glaryImage {
-                                height: 300px;
-                                filter: grayscale(0);
-                            }
-
-                        }
-
-                        .cardTag {text-align: left;}
+                    .glaryImage {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 556px;
+                        z-index: 3;
+                        filter: grayscale(1);
+                        transition: .3s all linear;
                     }
+
+                    .glaryContent {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 256px;
+                        z-index: 1;
+                    }
+
+                    &:hover .glaryImage {
+                        height: 300px;
+                        filter: grayscale(0);
+                    }
+
+                }
+
+                .cardTag {
+                    text-align: left;
+                    height: 80px;
                 }
             }
         }
@@ -1597,49 +1607,57 @@
                 }
             }
 
-            .treatmentGalary {
-                .treatmentGlaryWrapper {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-rows: auto;
-                    gap: 20px;
 
-                    .glaryItem {
-                        .glaryCard {
-                            width: 100%;
-                            min-width: 300px;
-                            max-width: 425px;
-                            height: 556px;
-                            position: relative;
+        }
+    }
 
-                            .glaryImage {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 556px;
-                                z-index: 3;
-                                filter: grayscale(1);
-                                transition: .3s all linear;
-                            }
+    .treatmentGalary {
+        .treatmentGlaryWrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
 
-                            .glaryContent {
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 256px;
-                                z-index: 1;
-                            }
+            .glaryItem {
+                .glaryCard {
+                    width: 100%;
+                    min-width: 300px;
+                    max-width: 425px;
+                    height: 556px;
+                    position: relative;
 
-                            &:hover .glaryImage {
-                                height: 300px;
-                                filter: grayscale(0);
-                            }
+                    .glaryImage {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 556px;
+                        z-index: 3;
+                        filter: grayscale(1);
+                        transition: .3s all linear;
+                    }
 
-                        }
+                    .glaryContent {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 256px;
+                        z-index: 1;
+                    }
 
-                        .cardTag {}
+                    &:hover .glaryImage {
+                        height: 300px;
+                        filter: grayscale(0);
+                    }
+
+                }
+
+                .cardTag {
+                    height: 80px;
+                    span{
+                        color: var(--primary-color);
+                        font-size: 24px;
                     }
                 }
             }
@@ -1892,49 +1910,56 @@
                 }
             }
 
-            .treatmentGalary {
-                .treatmentGlaryWrapper {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    grid-template-rows: auto;
-                    gap: 20px;
 
-                    .glaryItem {
-                        .glaryCard {
-                            width: 100%;
-                            min-width: 300px;
-                            max-width: 425px;
-                            height: 556px;
-                            position: relative;
+        }
+    }
 
-                            .glaryImage {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 556px;
-                                z-index: 3;
-                                transition: .3s all linear;
-                                filter: grayscale(1);
-                            }
+    .treatmentGalary {
+        .treatmentGlaryWrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
 
-                            .glaryContent {
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 256px;
-                                z-index: 1;
-                            }
+            .glaryItem {
+                .glaryCard {
+                    width: 100%;
+                    min-width: 300px;
+                    max-width: 425px;
+                    height: 556px;
+                    position: relative;
 
-                            &:hover .glaryImage {
-                                height: 300px;
-                                filter: grayscale(0);
-                            }
+                    .glaryImage {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 556px;
+                        z-index: 3;
+                        transition: .3s all linear;
+                        filter: grayscale(1);
+                    }
 
-                        }
+                    .glaryContent {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 256px;
+                        z-index: 1;
+                    }
 
-                        .cardTag {}
+                    &:hover .glaryImage {
+                        height: 300px;
+                        filter: grayscale(0);
+                    }
+
+                }
+
+                .cardTag {
+                    height: 100px;
+                    span{
+                        color: var(--primary-color);
                     }
                 }
             }

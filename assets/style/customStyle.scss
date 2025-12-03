@@ -11,6 +11,7 @@
 @import 'typography';
 @import 'variables';
 @import 'component/treatment_we_treat';
+@import 'component/condition_we_treat';
 
 @font-face {
     font-family: "MyFont1";
@@ -73,8 +74,5 @@ a {
 }
 
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-#Condition_page{
-    padding-top: 152px;
-}
 
 

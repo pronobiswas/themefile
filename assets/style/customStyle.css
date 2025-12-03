@@ -907,6 +907,14 @@ footer#footer .footerWrapper .footernav .footerNavIcon {
   display: flex;
   gap: 10px;
 }
+footer#footer .footerWrapper .footernav .footerNavIcon .social_icon {
+  transform: scale(1);
+  transition: 0.1s all linear;
+}
+footer#footer .footerWrapper .footernav .footerNavIcon .social_icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
 footer#footer .footerWrapper .footerContent {
   width: 100%;
   display: flex;
@@ -931,6 +939,24 @@ footer#footer .footerWrapper .footNote {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+footer#footer .footerWrapper .footer_link {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+footer#footer .footerWrapper .footer_link::after {
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: 0.2s all linear;
+}
+footer#footer .footerWrapper .footer_link:hover::after {
+  width: 100%;
 }
 
 @media screen and (max-width: 576px) {
@@ -1464,23 +1490,23 @@ footer#footer .footerWrapper .footNote {
 #consitionWeTreat {
   width: 100%;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary {
+.treatmentGalary {
   padding-top: 50px;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper {
+.treatmentGalary .treatmentGlaryWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 20px;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
+.treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
   width: 100%;
   min-width: 300px;
   max-width: 425px;
   height: 556px;
   position: relative;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
+.treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
   position: absolute;
   top: 0;
   left: 0;
@@ -1491,7 +1517,7 @@ footer#footer .footerWrapper .footNote {
   filter: grayscale(1);
   transition: 0.3s all linear;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
+.treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1503,25 +1529,25 @@ footer#footer .footerWrapper .footNote {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent::-webkit-scrollbar {
+.treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent::-webkit-scrollbar {
   display: none;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
+.treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
   height: 300px;
   filter: grayscale(0);
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
+.treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
   width: 100%;
   font-size: 28px;
   padding: 5px;
   text-align: left;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn {
+.treatmentGalary .view_more_btn {
   width: 100%;
   padding: 20px 0;
   text-align: center;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn .myBtn {
+.treatmentGalary .view_more_btn .myBtn {
   display: inline-block;
   padding: 20px 80px;
   background-color: #1E3070;
@@ -1534,14 +1560,14 @@ footer#footer .footerWrapper .footNote {
   box-shadow: inset 0 0 5px #0a30bd;
   cursor: pointer;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn .myBtn:hover {
+.treatmentGalary .view_more_btn .myBtn:hover {
   background-color: white;
   color: #1E3070;
   border: 1px solid rgba(30, 48, 112, 0.568627451);
   outline: 1px solid rgba(10, 49, 189, 0.8235294118);
   transition: 0.2s all linear;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn .myBtn::after {
+.treatmentGalary .view_more_btn .myBtn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1555,7 +1581,7 @@ footer#footer .footerWrapper .footNote {
   transition-delay: 0.2s;
   transition: 0.2s all linear;
 }
-#consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .view_more_btn .myBtn:hover::after {
+.treatmentGalary .view_more_btn .myBtn:hover::after {
   width: 100%;
   opacity: 1;
 }
@@ -1930,26 +1956,26 @@ footer#footer .footerWrapper .footNote {
   #consitionWeTreat .conditionWeTreatWrapper .heading .desc {
     width: 100%;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper {
+  .treatmentGalary .treatmentGlaryWrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 20px;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
     width: 100%;
     min-width: 300px;
     max-width: 425px;
     height: 556px;
     position: relative;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
     position: absolute;
     top: 0;
     left: 0;
@@ -1958,7 +1984,7 @@ footer#footer .footerWrapper .footNote {
     z-index: 3;
     transition: 0.3s all linear;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1966,10 +1992,10 @@ footer#footer .footerWrapper .footNote {
     height: 256px;
     z-index: 1;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
     height: 300px;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
     text-align: center;
   }
   #doctor_details {
@@ -2329,26 +2355,26 @@ footer#footer .footerWrapper .footNote {
   #consitionWeTreat .conditionWeTreatWrapper .heading .desc {
     width: 100%;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper {
+  .treatmentGalary .treatmentGlaryWrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 20px;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
     width: 100%;
     min-width: 300px;
     max-width: 425px;
     height: 556px;
     position: relative;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
     position: absolute;
     top: 0;
     left: 0;
@@ -2358,7 +2384,7 @@ footer#footer .footerWrapper .footNote {
     filter: grayscale(1);
     transition: 0.3s all linear;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2366,11 +2392,11 @@ footer#footer .footerWrapper .footNote {
     height: 256px;
     z-index: 1;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
     height: 300px;
     filter: grayscale(0);
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
     text-align: center;
   }
   #doctor_details {
@@ -2691,20 +2717,20 @@ footer#footer .footerWrapper .footNote {
   #consitionWeTreat .conditionWeTreatWrapper .heading .desc {
     width: 100%;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper {
+  .treatmentGalary .treatmentGlaryWrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 20px;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
     width: 100%;
     min-width: 300px;
     max-width: 425px;
     height: 556px;
     position: relative;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
     position: absolute;
     top: 0;
     left: 0;
@@ -2714,7 +2740,7 @@ footer#footer .footerWrapper .footNote {
     filter: grayscale(1);
     transition: 0.3s all linear;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2722,12 +2748,13 @@ footer#footer .footerWrapper .footNote {
     height: 256px;
     z-index: 1;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
     height: 300px;
     filter: grayscale(0);
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
     text-align: left;
+    height: 80px;
   }
   #doctor_details {
     width: 100%;
@@ -3049,20 +3076,20 @@ footer#footer .footerWrapper .footNote {
   #consitionWeTreat .conditionWeTreatWrapper .heading .desc {
     width: 100%;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper {
+  .treatmentGalary .treatmentGlaryWrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 20px;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
     width: 100%;
     min-width: 300px;
     max-width: 425px;
     height: 556px;
     position: relative;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
     position: absolute;
     top: 0;
     left: 0;
@@ -3072,7 +3099,7 @@ footer#footer .footerWrapper .footNote {
     filter: grayscale(1);
     transition: 0.3s all linear;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -3080,9 +3107,16 @@ footer#footer .footerWrapper .footNote {
     height: 256px;
     z-index: 1;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
     height: 300px;
     filter: grayscale(0);
+  }
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
+    height: 80px;
+  }
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag span {
+    color: var(--primary-color);
+    font-size: 24px;
   }
   #Meet_Our_Expert_Doctor {
     background: linear-gradient(#E9EAF1, rgba(109, 195, 28, 0.0196078431));
@@ -3362,20 +3396,20 @@ footer#footer .footerWrapper .footNote {
   #consitionWeTreat .conditionWeTreatWrapper .heading .desc {
     width: 60%;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper {
+  .treatmentGalary .treatmentGlaryWrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 20px;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard {
     width: 100%;
     min-width: 300px;
     max-width: 425px;
     height: 556px;
     position: relative;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryImage {
     position: absolute;
     top: 0;
     left: 0;
@@ -3385,7 +3419,7 @@ footer#footer .footerWrapper .footNote {
     transition: 0.3s all linear;
     filter: grayscale(1);
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard .glaryContent {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -3393,9 +3427,15 @@ footer#footer .footerWrapper .footNote {
     height: 256px;
     z-index: 1;
   }
-  #consitionWeTreat .conditionWeTreatWrapper .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .glaryCard:hover .glaryImage {
     height: 300px;
     filter: grayscale(0);
+  }
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag {
+    height: 100px;
+  }
+  .treatmentGalary .treatmentGlaryWrapper .glaryItem .cardTag span {
+    color: var(--primary-color);
   }
 }
 #About_Our_Physicians {
@@ -3668,6 +3708,9 @@ footer#footer .footerWrapper .footNote {
 #ofice_location .office_location_wrapper {
   width: 100%;
 }
+#ofice_location .office_location_wrapper .office_location_heading_wpapper {
+  margin-bottom: 30px;
+}
 #ofice_location .office_location_wrapper .office_location_map_wpapper {
   width: 100%;
 }
@@ -3683,16 +3726,10 @@ footer#footer .footerWrapper .footNote {
   /* ==Mobile (1 column)== */
   grid-template-columns: 1fr;
   /* ==Tablet (2 columns)== */
-  /* ==Desktop (3 columns)== */
 }
-@media (min-width: 576px) {
+@media (min-width: 786px) {
   #ofice_location .office_location_wrapper .office_location_map_wpapper .office_location_map_list {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 992px) {
-  #ofice_location .office_location_wrapper .office_location_map_wpapper .office_location_map_list {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 #ofice_location .office_location_wrapper .office_location_map_wpapper .office_location_map_list li {
@@ -4761,6 +4798,23 @@ p {
     padding: 115px 0 50px 0;
   }
 }
+#Condition_page {
+  padding-top: 152px;
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  #Condition_page {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #Condition_page {
+    padding-top: 160px;
+    padding-bottom: 60px;
+  }
+}
+
 @font-face {
   font-family: "MyFont1";
   src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
@@ -4823,8 +4877,4 @@ ol {
 a {
   display: inline-block;
   text-decoration: none;
-}
-
-#Condition_page {
-  padding-top: 152px;
 }/*# sourceMappingURL=customStyle.css.map */

@@ -24,6 +24,14 @@ footer#footer {
             .footerNavIcon {
                 display: flex;
                 gap: 10px;
+                .social_icon{
+                    transform: scale(1);
+                    transition: .1s all linear;
+                    &:hover{
+                        transform: scale(1.2);
+                        cursor: pointer;
+                    }
+                }
             }
         }
 
@@ -45,7 +53,10 @@ footer#footer {
                         color: var(--primary-color);
                         padding: 5px 12px;
                     }
-                    p{padding: 10px 0;}
+
+                    p {
+                        padding: 10px 0;
+                    }
                 }
             }
 
@@ -56,6 +67,25 @@ footer#footer {
             display: flex;
             align-items: center;
             gap: 30px;
+        }
+
+        .footer_link {
+            display: inline-block;
+            position: relative;
+            color: white;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 105%;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: white;
+                transition: .2s all linear;
+            }
+            &:hover::after{
+                width: 100%;
+            }
         }
     }
 }
@@ -156,16 +186,17 @@ footer#footer {
 
 @media screen and (min-width: 576px) {
 
-     footer#footer {
+    footer#footer {
         width: 100%;
         padding: 20px;
-        
+
         background-color: #1E3070;
         color: white;
 
         .footerWrapper {
             // width: calc(100% - 40px);
             width: 100%;
+
             .footernav {
                 width: 100%;
                 display: flex;
@@ -248,9 +279,10 @@ footer#footer {
     }
 
 }
+
 @media screen and (min-width: 1024px) {
 
-     footer#footer {
+    footer#footer {
         width: 100%;
         padding: 20px;
         background-color: #1E3070;
@@ -258,6 +290,7 @@ footer#footer {
 
         .footerWrapper {
             width: 100%;
+
             .footernav {
                 width: 100%;
                 display: flex;
