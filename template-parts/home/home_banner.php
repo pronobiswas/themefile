@@ -9,11 +9,31 @@
 
 <section id="homeBanner" class="home_banner">
     <div class="banner_content_wrapper">
-        <div class="banner_video">
-            <video autoplay muted loop playsinline>
-                <source src="<?php echo get_template_directory_uri(); ?>/assets/video/home_banner_video.mp4"
-                    type="video/mp4">
-            </video>
+        <div class="video_slider">
+            <div class="banner_video active">
+                <span>video 1</span>
+                <video autoplay muted loop playsinline>
+                    <source src="<?php echo get_template_directory_uri(); ?>/assets/video/home_banner_video.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="banner_video">
+                <video autoplay muted loop playsinline>
+                    <source src="<?php echo get_template_directory_uri(); ?>/assets/video/bannerVideo1.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="banner_video">
+                <video autoplay muted loop playsinline>
+                    <source src="<?php echo get_template_directory_uri(); ?>/assets/video/bannerVideo3.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <!-- Navigation -->
+            <div class="controls">
+                <button id="prevVideo" aria-label="Previous Video">⟨</button>
+                <button id="nextVideo" aria-label="Next Video">⟩</button>
+            </div>
         </div>
         <div class="banner_content">
             <h1>Live Life Pain-Free</h1>
@@ -31,28 +51,41 @@
                 </a>
             </div>
         </div>
-        <!-- ---textus messaging--- -->
-        <!-- <div class="text_us">
-            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <mask id="mask0_764_1005" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20"
-                        height="20">
-                        <path
-                            d="M20 2C21.1 2 22 2.9 22 4V16C22 17.1 21.1 18 20 18H6L2 22L2.00977 4C2.00977 2.9 2.9 2 4 2H20ZM7 12C6.45 12 6 12.45 6 13C6 13.55 6.45 14 7 14H13C13.55 14 14 13.55 14 13C14 12.45 13.55 12 13 12H7ZM7 9C6.45 9 6 9.45 6 10C6 10.55 6.45 11 7 11H17C17.55 11 18 10.55 18 10C18 9.45 17.55 9 17 9H7ZM7 6C6.45 6 6 6.45 6 7C6 7.55 6.45 8 7 8H17C17.55 8 18 7.55 18 7C18 6.45 17.55 6 17 6H7Z"
-                            fill="black" />
-                    </mask>
-                    <g mask="url(#mask0_764_1005)">
-                        <rect width="24" height="24" fill="#FDFDFD" />
-                    </g>
-                </svg>
-            </span>
-            <span>Text Us</span>
-        </div> -->
-        <!-- --message us-- -->
-        <!-- <div class="message_us">
-            <img src="/messageAvatar.jpg" alt="messageAvatar">
-            <p>interested in booking
-                an appointment?
-                Message us here!</p>
-        </div> -->
+
     </div>
 </section>
+
+<script>
+const slides = document.querySelectorAll(".banner_video");
+const nextBtn = document.getElementById("nextVideo");
+const prevBtn = document.getElementById("prevVideo");
+let currentIndex = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
+    }
+  });
+}
+
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+  console.log("clicked next");
+  
+});
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+  console.log("clicked prev");
+});
+
+// Optional: Auto slide every 8 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}, 8000);
+</script>

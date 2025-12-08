@@ -16,20 +16,43 @@
         align-items: center;
         justify-content: center;
         position: relative;
-
-        .banner_video {
+        .video_slider{
+            position: relative;
             width: 100%;
             height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-
-            video {
-                // aspect-ratio: 1770/826;
+            overflow: hidden;
+            .banner_video {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                position: absolute;
+                z-index: 1;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+                video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .banner_video.active {
+                opacity: 1;
+                z-index: 2;
+                }
+            .controls {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 3;
+                button {
+                        background: rgba(0,0,0,0.5);
+                        color: white;
+                        border: none;
+                        padding: 10px 20px;
+                        margin: 0 10px;
+                        font-size: 20px;
+                        cursor: pointer;
+                        }
             }
         }
 
@@ -39,9 +62,8 @@
             padding: 5px;
             text-align: center;
             color: white;
-            position: relative;
-            z-index: 2;
-
+            position: absolute;
+            z-index: 3;
             h1 {
                 font-size: 74px;
                 font-weight: 600;
@@ -63,47 +85,6 @@
                 }
             }
         }
-
-        // .text_us{
-        //     position: absolute;
-        //     bottom: 36px;
-        //     right: 48px;
-        //     z-index: 4;
-        //     width: fit-content;
-        //     padding: 5px 10px;
-        //     background-color: #1E3070;
-        //     color: white;
-        //     border-radius: 12px;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: space-between;
-        //     gap: 8px;
-        // }
-        // .message_us{
-        //     position: absolute;
-        //     bottom: 100px;
-        //     right: 10px;
-        //     z-index: 4;
-        //     width: fit-content;
-        //     padding: 22px 31px 43px 31px;
-        //     background-color: #E9EAF1;
-        //     border-radius: 20px;
-        //     display: flex;
-        //     align-items: start;
-        //     justify-content: space-between;
-        //     gap: 24px;
-        //     img{
-        //         width: 72px;
-        //         height: 72px;
-        //         border-radius: 50%;
-        //         border: 1px solid gray;
-        //     }
-        //     p{
-        //         width: 100%;
-        //         max-width: 205px;
-        //         font-size: 16px;
-        //     }
-        // }
     }
 }
 
@@ -403,69 +384,69 @@
 }
 
 @media screen and (max-width:576px) {
-    #homeBanner {
-        width: 100%;
-        height: calc(100vh - 100px);
-        min-height: 600px;
-        background-image: url("../images/homeBanner.png");
-        background-size: cover;
-        background-position: center center;
+    // #homeBanner {
+    //     width: 100%;
+    //     height: calc(100vh - 100px);
+    //     min-height: 600px;
+    //     background-image: url("../images/homeBanner.png");
+    //     background-size: cover;
+    //     background-position: center center;
 
-        .banner_content_wrapper {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    //     .banner_content_wrapper {
+    //         width: 100%;
+    //         height: 100%;
+    //         position: relative;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
 
-            .banner_video {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
+    //         .banner_video {
+    //             width: 100%;
+    //             height: 100%;
+    //             position: absolute;
+    //             top: 0;
+    //             left: 0;
+    //             z-index: 1;
 
-                video {
-                    // aspect-ratio: 1770/826;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+    //             video {
+    //                 // aspect-ratio: 1770/826;
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 object-fit: cover;
+    //             }
+    //         }
 
-            .banner_content {
-                width: 100%;
-                max-width: 650px;
-                padding: 5px;
-                text-align: center;
-                color: white;
-                position: relative;
-                z-index: 2;
+    //         .banner_content {
+    //             width: 100%;
+    //             max-width: 650px;
+    //             padding: 5px;
+    //             text-align: center;
+    //             color: white;
+    //             position: relative;
+    //             z-index: 2;
 
-                h1 {
-                    font-size: 44px;
-                    font-weight: 600;
-                }
+    //             h1 {
+    //                 font-size: 44px;
+    //                 font-weight: 600;
+    //             }
 
-                p {
-                    padding: 20px 0 40px 0;
-                    font-size: 16px;
-                }
+    //             p {
+    //                 padding: 20px 0 40px 0;
+    //                 font-size: 16px;
+    //             }
 
-                .btnWrapper {
-                    display: flex;
-                    justify-content: center;
-                    gap: 30px;
+    //             .btnWrapper {
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 gap: 30px;
 
-                    .myBtn {
-                        @include myBtn(12px, 24px)
-                    }
-                }
-            }
-        }
-    }
+    //                 .myBtn {
+    //                     @include myBtn(12px, 24px)
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     #aboutPractice {
         width: 100%;
@@ -757,69 +738,69 @@
 }
 
 @media screen and (min-width:576px) {
-    #homeBanner {
-        width: 100%;
-        height: calc(100vh - 100px);
-        min-height: 600px;
-        background-image: url("../images/homeBanner.png");
-        background-size: cover;
-        background-position: center center;
+    // #homeBanner {
+    //     width: 100%;
+    //     height: calc(100vh - 100px);
+    //     min-height: 600px;
+    //     background-image: url("../images/homeBanner.png");
+    //     background-size: cover;
+    //     background-position: center center;
 
-        .banner_content_wrapper {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
+    //     .banner_content_wrapper {
+    //         width: 100%;
+    //         height: 100%;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         position: relative;
 
-            .banner_video {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
+    //         .banner_video {
+    //             width: 100%;
+    //             height: 100%;
+    //             position: absolute;
+    //             top: 0;
+    //             left: 0;
+    //             z-index: 1;
 
-                video {
-                    // aspect-ratio: 1770/826;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+    //             video {
+    //                 // aspect-ratio: 1770/826;
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 object-fit: cover;
+    //             }
+    //         }
 
-            .banner_content {
-                width: 100%;
-                max-width: 650px;
-                padding: 5px;
-                text-align: center;
-                color: white;
-                position: relative;
-                z-index: 2;
+    //         .banner_content {
+    //             width: 100%;
+    //             max-width: 650px;
+    //             padding: 5px;
+    //             text-align: center;
+    //             color: white;
+    //             position: relative;
+    //             z-index: 2;
 
-                h1 {
-                    font-size: 44px;
-                    font-weight: 600;
-                }
+    //             h1 {
+    //                 font-size: 44px;
+    //                 font-weight: 600;
+    //             }
 
-                p {
-                    padding: 20px 0 40px 0;
-                    font-size: 16px;
-                }
+    //             p {
+    //                 padding: 20px 0 40px 0;
+    //                 font-size: 16px;
+    //             }
 
-                .btnWrapper {
-                    display: flex;
-                    justify-content: center;
-                    gap: 30px;
+    //             .btnWrapper {
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 gap: 30px;
 
-                    .myBtn {
-                        @include myBtn(12px, 24px)
-                    }
-                }
-            }
-        }
-    }
+    //                 .myBtn {
+    //                     @include myBtn(12px, 24px)
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     #aboutPractice {
         width: 100%;
@@ -1109,69 +1090,69 @@
 }
 
 @media screen and (min-width:768px) {
-    #homeBanner {
-        width: 100%;
-        height: calc(100vh - 100px);
-        min-height: 600px;
-        background-image: url("../images/homeBanner.png");
-        background-size: cover;
-        background-position: center center;
+    // #homeBanner {
+    //     width: 100%;
+    //     height: calc(100vh - 100px);
+    //     min-height: 600px;
+    //     background-image: url("../images/homeBanner.png");
+    //     background-size: cover;
+    //     background-position: center center;
 
-        .banner_content_wrapper {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
+    //     .banner_content_wrapper {
+    //         width: 100%;
+    //         height: 100%;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         position: relative;
 
-            .banner_video {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
+    //         .banner_video {
+    //             width: 100%;
+    //             height: 100%;
+    //             position: absolute;
+    //             top: 0;
+    //             left: 0;
+    //             z-index: 1;
 
-                video {
-                    // aspect-ratio: 1770/826;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+    //             video {
+    //                 // aspect-ratio: 1770/826;
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 object-fit: cover;
+    //             }
+    //         }
 
-            .banner_content {
-                width: 100%;
-                max-width: 650px;
-                padding: 5px;
-                text-align: center;
-                color: white;
-                position: relative;
-                z-index: 2;
+    //         .banner_content {
+    //             width: 100%;
+    //             max-width: 650px;
+    //             padding: 5px;
+    //             text-align: center;
+    //             color: white;
+    //             position: relative;
+    //             z-index: 2;
 
-                h1 {
-                    font-size: 44px;
-                    font-weight: 600;
-                }
+    //             h1 {
+    //                 font-size: 44px;
+    //                 font-weight: 600;
+    //             }
 
-                p {
-                    padding: 20px 0 40px 0;
-                    font-size: 16px;
-                }
+    //             p {
+    //                 padding: 20px 0 40px 0;
+    //                 font-size: 16px;
+    //             }
 
-                .btnWrapper {
-                    display: flex;
-                    justify-content: center;
-                    gap: 30px;
+    //             .btnWrapper {
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 gap: 30px;
 
-                    .myBtn {
-                        @include myBtn(12px, 24px)
-                    }
-                }
-            }
-        }
-    }
+    //                 .myBtn {
+    //                     @include myBtn(12px, 24px)
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     #aboutPractice {
         width: 100%;
@@ -1458,69 +1439,69 @@
 }
 
 @media screen and (min-width:1024px) {
-    #homeBanner {
-        width: 100%;
-        height: calc(100vh - 100px);
-        min-height: 600px;
-        background-image: url("../images/homeBanner.png");
-        background-size: cover;
-        background-position: center center;
+    // #homeBanner {
+    //     width: 100%;
+    //     height: calc(100vh - 100px);
+    //     min-height: 600px;
+    //     background-image: url("../images/homeBanner.png");
+    //     background-size: cover;
+    //     background-position: center center;
 
-        .banner_content_wrapper {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    //     .banner_content_wrapper {
+    //         width: 100%;
+    //         height: 100%;
+    //         position: relative;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
 
-            .banner_video {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
+    //         .banner_video {
+    //             width: 100%;
+    //             height: 100%;
+    //             position: absolute;
+    //             top: 0;
+    //             left: 0;
+    //             z-index: 1;
 
-                video {
-                    // aspect-ratio: 1770/826;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+    //             video {
+    //                 // aspect-ratio: 1770/826;
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 object-fit: cover;
+    //             }
+    //         }
 
-            .banner_content {
-                width: 100%;
-                max-width: 650px;
-                padding: 5px;
-                text-align: center;
-                color: white;
-                position: relative;
-                z-index: 2;
+    //         .banner_content {
+    //             width: 100%;
+    //             max-width: 650px;
+    //             padding: 5px;
+    //             text-align: center;
+    //             color: white;
+    //             position: relative;
+    //             z-index: 2;
 
-                h1 {
-                    font-size: 44px;
-                    font-weight: 600;
-                }
+    //             h1 {
+    //                 font-size: 44px;
+    //                 font-weight: 600;
+    //             }
 
-                p {
-                    padding: 20px 0 40px 0;
-                    font-size: 16px;
-                }
+    //             p {
+    //                 padding: 20px 0 40px 0;
+    //                 font-size: 16px;
+    //             }
 
-                .btnWrapper {
-                    display: flex;
-                    justify-content: center;
-                    gap: 30px;
+    //             .btnWrapper {
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 gap: 30px;
 
-                    .myBtn {
-                        @include myBtn(12px, 24px)
-                    }
-                }
-            }
-        }
-    }
+    //                 .myBtn {
+    //                     @include myBtn(12px, 24px)
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     #aboutPractice {
         width: 100%;
@@ -1762,69 +1743,69 @@
 }
 
 @media screen and (min-width:1200px) {
-    #homeBanner {
-        width: 100%;
-        height: calc(100vh - 100px);
-        min-height: 600px;
-        background-image: url("../images/homeBanner.png");
-        background-size: cover;
-        background-position: center center;
+    // #homeBanner {
+    //     width: 100%;
+    //     height: calc(100vh - 100px);
+    //     min-height: 600px;
+    //     background-image: url("../images/homeBanner.png");
+    //     background-size: cover;
+    //     background-position: center center;
 
-        .banner_content_wrapper {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
+    //     .banner_content_wrapper {
+    //         width: 100%;
+    //         height: 100%;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         position: relative;
 
-            .banner_video {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
+    //         .banner_video {
+    //             width: 100%;
+    //             height: 100%;
+    //             position: absolute;
+    //             top: 0;
+    //             left: 0;
+    //             z-index: 1;
 
-                video {
-                    // aspect-ratio: 1770/826;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+    //             video {
+    //                 // aspect-ratio: 1770/826;
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 object-fit: cover;
+    //             }
+    //         }
 
-            .banner_content {
-                width: 100%;
-                max-width: 665px;
-                padding: 5px;
-                text-align: center;
-                color: white;
-                position: relative;
-                z-index: 2;
+    //         .banner_content {
+    //             width: 100%;
+    //             max-width: 665px;
+    //             padding: 5px;
+    //             text-align: center;
+    //             color: white;
+    //             position: relative;
+    //             z-index: 2;
 
-                h1 {
-                    font-size: 74px;
-                    font-weight: 700;
-                }
+    //             h1 {
+    //                 font-size: 74px;
+    //                 font-weight: 700;
+    //             }
 
-                p {
-                    padding: 16px 0 32px 0;
-                    font-size: 16px;
-                }
+    //             p {
+    //                 padding: 16px 0 32px 0;
+    //                 font-size: 16px;
+    //             }
 
-                .btnWrapper {
-                    display: flex;
-                    justify-content: center;
-                    gap: 30px;
+    //             .btnWrapper {
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 gap: 30px;
 
-                    .myBtn {
-                        @include myBtn(12px, 24px)
-                    }
-                }
-            }
-        }
-    }
+    //                 .myBtn {
+    //                     @include myBtn(12px, 24px)
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     #aboutPractice {
         width: 100%;
