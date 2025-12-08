@@ -40,10 +40,11 @@
             <p>Advanced Pain Institute of Texas is a full-spectrum, multi-disciplinary pain management practice focused
                 on providing the best patient-focused care for a wide range of chronic pain conditions.</p>
             <div class="btnWrapper">
-                <a href=""></a>
+                <a href="tell:9082281198">
                 <div class="myBtn">
-                    <span>(948)228-1198</span>
+                    <span>908-228-1198</span>
                 </div>
+                </a>
                 <a href="<?php echo home_url('/abbout_our_physicians'); ?>">
                     <div class="myBtn">
                         <span>Book Appointment</span>

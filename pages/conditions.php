@@ -37,7 +37,11 @@ get_header();
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Car-Accident-Head-Injury-1.jpg"
                                     alt="back_pain.png" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Treatment for car accident injuries begins with immediate medical evaluation (ER/doctor visit) for diagnosis. Depending on the injury type (e.g., fractures, whiplash, soft tissue damage), treatment involves pain management, immobilization (casts/braces), and often surgery. The recovery phase requires extensive physical therapy and rehabilitation to regain function.</p>
+                                    <p>Treatment for car accident injuries begins with immediate medical evaluation
+                                        (ER/doctor visit) for diagnosis. Depending on the injury type (e.g., fractures,
+                                        whiplash, soft tissue damage), treatment involves pain management,
+                                        immobilization (casts/braces), and often surgery. The recovery phase requires
+                                        extensive physical therapy and rehabilitation to regain function.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -50,7 +54,10 @@ get_header();
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/WorkersCompensationWork related accident.jpg"
                                     alt="neck_pain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Workers' Compensation is no-fault insurance paid by employers that provides medical expenses and partial lost wages to employees injured or made ill due to their job. In exchange for these guaranteed benefits, the employee forfeits their right to sue the employer for negligence.</p>
+                                    <p>Workers' Compensation is no-fault insurance paid by employers that provides
+                                        medical expenses and partial lost wages to employees injured or made ill due to
+                                        their job. In exchange for these guaranteed benefits, the employee forfeits
+                                        their right to sue the employer for negligence.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -64,7 +71,11 @@ get_header();
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Carpal-Tunnel-Wrist-Pain.jpg"
                                     alt="headaches_migraines" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Carpal Tunnel Syndrome (CTS) is a common condition caused by pressure on the median nerve as it passes through a narrow passageway in the wrist. This compression results in characteristic symptoms like numbness, tingling, and pain in the thumb and first few fingers, often worsening at night. Treatment ranges from wrist splinting and injections to surgery in severe cases.</p>
+                                    <p>Carpal Tunnel Syndrome (CTS) is a common condition caused by pressure on the
+                                        median nerve as it passes through a narrow passageway in the wrist. This
+                                        compression results in characteristic symptoms like numbness, tingling, and pain
+                                        in the thumb and first few fingers, often worsening at night. Treatment ranges
+                                        from wrist splinting and injections to surgery in severe cases.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -74,10 +85,19 @@ get_header();
                         <!-- --Cervical/ Thoracic/Lumbar Epidural Steroid injection--  -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Labor-Epidural.webp"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/CervicalThoracicLumbar Facet Joint Injections.jpg"
                                     alt="headaches_migraines" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>An Epidural Steroid Injection (ESI) delivers potent anti-inflammatory steroid medication directly into the epidural space around spinal nerves in the cervical (neck), thoracic (mid-back), or lumbar (low-back) regions. Its primary goal is to reduce nerve root inflammation caused by conditions like herniated discs or stenosis, providing pain relief that often radiates into the arms or legs.</p>
+                                    <p>A procedure that delivers anti-inflammatory medication into the space around the
+                                        spinal nerves in the neck to help reduce pain, numbness, or tingling.
+
+                                        Thoracic Epidural Steroid Injection:
+                                        An injection in the middle spine area that helps relieve nerve inflammation and
+                                        pain that may travel around the chest or upper back.
+
+                                        Lumbar Epidural Steroid Injection:
+                                        A targeted injection in the lower back that reduces nerve irritation and helps
+                                        ease lower-back pain or leg pain (such as sciatica).</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -105,21 +125,20 @@ get_header();
                         <!-- --Cervical/Thoracic/Lumbar Medial Branch Block (MBB)-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/muscle_soft_tissue_pain.jpg"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/CervicalThoracicLumbarMedialBranchBlockMBB.jpg"
                                     alt="muscle_soft_tissue_pain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Muscle and soft tissue pain (Myalgia) refers to discomfort in the muscles,
-                                        ligaments,
-                                        tendons, and fascia (connective tissue).
+                                    <p>Cervical Medial Branch Block (MBB):
+                                        A diagnostic procedure where an anesthetic is injected near the nerves in the
+                                        neck to identify the source of pain and provide temporary relief.
 
-                                        Specific Soft Tissue Syndromes-
-                                        Myofascial Pain Syndrome: Persistent, localized muscle pain caused by trigger
-                                        points
-                                        (tender knots or nodules within a tight band of muscle). Pressure on these
-                                        points
-                                        causes pain, sometimes radiating to other areas.
-                                        Tendonitis/Bursitis: Inflammation of a tendon or bursa (fluid-filled sac near a
-                                        joint), leading to acute pain, tenderness, and difficulty moving the joint.</p>
+                                        Thoracic Medial Branch Block (MBB):
+                                        An injection into the thoracic spine to block pain signals from specific nerves,
+                                        helping diagnose and treat upper back pain.
+
+                                        Lumbar Medial Branch Block (MBB):
+                                        A procedure where an anesthetic is injected near the nerves in the lower back to
+                                        relieve pain and identify the source of chronic low back pain</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -129,12 +148,10 @@ get_header();
                         <!-- --Chronic Pain-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cancer_pain.jpg"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ChronicPain.jpg"
                                     alt="Cancer Pain" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Cancer pain is a complex symptom that can be caused by the disease itself, by the
-                                        treatment, or by other related conditions. Pain management is a crucial part of
-                                        cancer care</p>
+                                    <p>A long-lasting pain condition that persists for months or years, often beyond the usual healing time, and can be caused by various conditions like injury, illness, or nerve damage. It can significantly impact daily life and require ongoing management.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -144,12 +161,10 @@ get_header();
                         <!-- --Arthritis-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Arthritis.jpg"
                                     alt="joint_pain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A group of conditions that cause inflammation, pain, and stiffness in the joints. The most common types are osteoarthritis and rheumatoid arthritis, which can affect mobility and daily activities.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -159,12 +174,10 @@ get_header();
                         <!-- --Complex Regional Pain Syndrome-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/crps1.jpg"
                                     alt="joint_pain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A chronic pain condition that typically affects a limb after an injury, causing intense pain, swelling, and changes in skin color and temperature. It may also involve abnormal sweating and sensitivity in the affected area.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -174,12 +187,10 @@ get_header();
                         <!-- --Genicular Nerve Block-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/GenicularNerveBlock.png"
                                     alt="joint_pain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A procedure where an anesthetic is injected around the genicular nerves in the knee to reduce pain caused by conditions like osteoarthritis. It helps diagnose and treat knee pain by temporarily blocking pain signals from the joint.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -189,12 +200,10 @@ get_header();
                         <!-- --Hip Pain-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hip-pain-800.jpg"
                                     alt="joint_pain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>Discomfort or soreness in the hip joint, often caused by conditions like arthritis, bursitis, or injury. It can result in limited mobility and may affect daily activities such as walking or standing.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -204,12 +213,10 @@ get_header();
                         <!-- --Joint Injection-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/JointInjection.jpg"
+                                    alt="JointInjection.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A medical procedure where medication, typically a steroid or anesthetic, is injected directly into a joint to reduce inflammation, pain, and swelling. It is commonly used to treat conditions like arthritis or tendonitis.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -222,9 +229,7 @@ get_header();
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
                                     alt="joint_pain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A treatment where hyaluronic acid is injected into a joint to improve lubrication, reduce pain, and enhance mobility, often used for osteoarthritis, especially in the knee. It helps restore the joint’s natural fluid, easing movement.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -234,12 +239,10 @@ get_header();
                         <!-- --Kyphoplasty-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Kyphoplasty.jpg"
+                                    alt="Kyphoplasty.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A minimally invasive procedure used to treat spinal compression fractures, often caused by osteoporosis. It involves injecting a special cement into the fractured vertebra to restore its height and reduce pain.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -249,12 +252,10 @@ get_header();
                         <!-- --Low Back Pain-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/LowBackPain.jpg"
+                                    alt="LowBackPain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>Pain or discomfort in the lower back, often caused by muscle strain, poor posture, herniated discs, or spinal issues. It can vary from mild to severe and may affect mobility and daily activities.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -264,12 +265,10 @@ get_header();
                         <!-- --Lumbar Spinal Stenosis-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/LumbarSpinalStenosis.jpg"
+                                    alt="LumbarSpinalStenosis.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A condition where the spaces in the lower spine narrow, putting pressure on the spinal cord and nerves. This can cause symptoms like pain, numbness, or weakness in the lower back, legs, and buttocks.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -279,12 +278,10 @@ get_header();
                         <!-- --Migraine-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Migraine.jpg"
+                                    alt="Migraine.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A neurological condition characterized by intense, recurring headaches often accompanied by nausea, sensitivity to light, and visual disturbances. Migraines can last for hours or even days and are triggered by various factors, including stress, certain foods, or hormonal changes.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -294,12 +291,10 @@ get_header();
                         <!-- --Neck Pain-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/NeckPain.jpg"
+                                    alt="NeckPain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>Discomfort or stiffness in the neck, often caused by muscle strain, poor posture, or injury. It can range from mild to severe and may be accompanied by headaches, numbness, or pain radiating down the arms.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -309,12 +304,10 @@ get_header();
                         <!-- --Neuropathy/ Nerve pain-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nerve_pain.webp"
+                                    alt="nerve_pain.webp" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>Pain caused by damage or dysfunction in the nerves, often resulting in sharp, burning, or tingling sensations. It can occur due to conditions like diabetes, infections, or injuries, affecting areas like the hands, feet, or other parts of the body.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -324,12 +317,10 @@ get_header();
                         <!-- --Non-Surgical Orthopedic Care-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Non-Surgical Orthopedic Care.jpg"
+                                    alt="Non-Surgical Orthopedic Care.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A treatment approach for musculoskeletal conditions that focuses on pain relief, rehabilitation, and improving mobility without surgery. Methods include physical therapy, medications, injections, and lifestyle changes to manage joint, muscle, and bone issues.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -339,12 +330,10 @@ get_header();
                         <!-- --Pain After Back Surgery-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Pain After Back Surgery.jpg"
                                     alt="joint_pain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>Ongoing discomfort or complications following spinal surgery, which may result from factors like nerve irritation, muscle strain, or surgical site inflammation. It can vary in intensity and may require additional treatment or rehabilitation to manage.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -354,12 +343,10 @@ get_header();
                         <!-- --Pain After Neck Surgery-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Pain After Neck Surgery.jpg"
+                                    alt="Pain After Neck Surgery.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>Discomfort or pain following neck surgery, often due to muscle soreness, nerve irritation, or surgical site healing. It can range from mild to severe and may require medication, physical therapy, or further treatments for relief.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -369,12 +356,10 @@ get_header();
                         <!-- --Peripheral Nerve Stimulation-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peripheral-nerve-stimulation.webp"
+                                    alt="peripheral-nerve-stimulation.webp" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A minimally invasive procedure that delivers electrical impulses to specific nerves to reduce chronic pain. It is used for conditions like neuropathy or joint pain, helping to block pain signals and improve quality of life.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -384,12 +369,10 @@ get_header();
                         <!-- --Radiofrequency Ablation-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/RadiofrequencyAblation.jpg"
+                                    alt="RadiofrequencyAblation.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A minimally invasive procedure that uses heat generated by radio waves to target and destroy nerve tissue causing pain. It is commonly used to treat chronic pain conditions, such as arthritis or back pain, by interrupting pain signals.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -399,12 +382,10 @@ get_header();
                         <!-- --Endoscopic Rhizotomy-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/EndoscopicRhizotomy.webp"
+                                    alt="EndoscopicRhizotomy.webp" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A minimally invasive procedure that targets and destroys nerve roots responsible for chronic pain, often in the neck or lower back. It is performed using an endoscope, which allows for precise treatment with minimal tissue disruption and faster recovery.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -414,12 +395,10 @@ get_header();
                         <!-- --Sacroiliac Joint Injection-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/SacroiliacJointInjection.jpg"
+                                    alt="SacroiliacJointInjection.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A procedure where medication, usually a steroid and anesthetic, is injected into the sacroiliac joint to reduce inflammation and relieve lower back or buttock pain. It helps diagnose and treat pain originating from the joint.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -429,12 +408,10 @@ get_header();
                         <!-- --Sacroiliac Joint Pain-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/SacroiliacJointPain.jpg"
+                                    alt="SacroiliacJointPain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>Pain in the lower back or buttocks caused by inflammation or dysfunction in the sacroiliac joint, which connects the spine to the pelvis. It can be triggered by injury, arthritis, or pregnancy-related changes, often resulting in sharp or aching pain.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -444,12 +421,10 @@ get_header();
                         <!-- --Spinal Cord Stimulator Trial/Implant-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
-                                    alt="joint_pain.jpg" class="glaryImage">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/SpinalCordStimulatorTrialImplant.jpg"
+                                    alt="SpinalCordStimulatorTrialImplant.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A procedure that involves placing a device near the spinal cord to deliver electrical impulses, which block pain signals from reaching the brain. The trial phase tests its effectiveness before permanent implantation for chronic pain management.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
@@ -459,12 +434,10 @@ get_header();
                         <!-- --Trigger Point Joint Injection-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Trigger Point Joint Injection.jpg"
                                     alt="joint_pain.jpg" class="glaryImage">
                                 <div class="glaryContent">
-                                    <p>Peripheral joint pain is a common issue causing generalized stiffness and aching
-                                        in joints like the knees, shoulders, elbows, wrists, ankles, and feet, sometimes
-                                        presenting as nerve issues like carpal tunnel syndrome</p>
+                                    <p>A procedure where medication, usually a local anesthetic or steroid, is injected into specific muscle "trigger points" to relieve localized pain and muscle tension. It helps treat conditions like fibromyalgia or myofascial pain syndrome.</p>
                                 </div>
                             </div>
                             <div class="cardTag">
