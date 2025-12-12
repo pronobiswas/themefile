@@ -31,13 +31,15 @@
                 }
 
                 .action_description {
-                    h5{
+                    h5 {
                         font-size: 20px;
                     }
-                    p{
+
+                    p {
                         padding: 12px 0 8px 0;
                     }
-                    a{
+
+                    a {
                         color: var(--primary-color);
                     }
                 }
@@ -62,6 +64,11 @@
                     .input_col {
                         width: 100%;
 
+                        label {
+                            color: #1E3070;
+                            font-weight: 600;
+                        }
+
                         .input_wrapper {
                             padding: 16px;
                             margin-top: 16px;
@@ -74,6 +81,7 @@
                                 width: 100%;
                                 border: 1px solid transparent;
                                 outline: 1px solid transparent;
+                                color: #1E3070;
 
                                 &:focus {
                                     border: 1px solid transparent;
@@ -88,7 +96,8 @@
                         }
                     }
                 }
-                button{
+
+                button {
                     padding: 8px;
                     background-color: var(--primary-color);
                     color: white;
@@ -186,7 +195,7 @@
                                 height: 200px;
                             }
                         }
-                        
+
                     }
                 }
             }
@@ -282,7 +291,7 @@
                                 height: 200px;
                             }
                         }
-                        
+
                     }
                 }
             }
@@ -359,7 +368,11 @@
                                 border-radius: 12px;
                                 display: flex;
                                 align-items: center;
-                                border: 1px solid #757997;
+                                border: 1px solid #1E3070;
+
+                                label {
+                                    color: #1E3070;
+                                }
 
                                 input {
                                     width: 100%;
@@ -378,7 +391,7 @@
                                 height: 200px;
                             }
                         }
-                        
+
                     }
                 }
             }
@@ -474,7 +487,7 @@
                                 height: 200px;
                             }
                         }
-                        
+
                     }
                 }
             }
@@ -570,7 +583,7 @@
                                 height: 200px;
                             }
                         }
-                        
+
                     }
                 }
             }

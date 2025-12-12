@@ -26,7 +26,7 @@ get_header();
                     <div class="action_description">
                         <h5>Call To Us</h5>
                         <p>We are available 24/7, 7 days a week.</p>
-                        <a href="tel:(948)228-1198">Phone: (948)228-1198</a>
+                        <a href="tel:908-228-1198">Phone: 908-228-1198</a>
                     </div>
                 </div>
                 <hr>
@@ -41,8 +41,7 @@ get_header();
                     <div class="action_description">
                         <h5>Send us email</h5>
                         <p>Fill out our form and we will contact you within 24 hours.</p>
-                        <a href="mailto:Info@Abc.com">Email: Info@Abc.com</a>
-                        <a href="Support@Website.com">Email: Support@Website.com</a>
+                        <a href="contact@nemadrs.com">Email: contact@nemadrs.com</a>
                     </div>
                 </div>
             </div>
@@ -117,7 +116,7 @@ get_header();
 
                         </div>
                     </div>
-                    <button>Send Message</button>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </div>
@@ -127,3 +126,34 @@ get_header();
 
 <?php
 get_footer();
+
+?>
+<script>
+document.getElementById('contact_form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    formData.append('action', 'contact_form');
+    formData.append('contact_form_nonce_field', document.getElementById('contact_form_nonce_field').value);
+
+    fetch('<?php echo admin_url('admin-ajax.php'); ?>', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        if (data.success) {
+            alert('Your message has been sent successfully!');
+            // Optionally reset the form
+            document.getElementById('contact_form').reset();
+        } else {
+            alert('There was an error. Please try again later.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error. Please try again later.');
+    });
+});
+</script>

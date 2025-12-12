@@ -3695,6 +3695,10 @@ footer#footer .footerWrapper .footer_link:hover::after {
 #contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col {
   width: 100%;
 }
+#contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col label {
+  color: #1E3070;
+  font-weight: 600;
+}
 #contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col .input_wrapper {
   padding: 16px;
   margin-top: 16px;
@@ -3707,6 +3711,7 @@ footer#footer .footerWrapper .footer_link:hover::after {
   width: 100%;
   border: 1px solid transparent;
   outline: 1px solid transparent;
+  color: #1E3070;
 }
 #contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col .input_wrapper input:focus {
   border: 1px solid transparent;
@@ -3951,7 +3956,10 @@ footer#footer .footerWrapper .footer_link:hover::after {
     border-radius: 12px;
     display: flex;
     align-items: center;
-    border: 1px solid #757997;
+    border: 1px solid #1E3070;
+  }
+  #contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col .input_wrapper label {
+    color: #1E3070;
   }
   #contact_page .contact_wrapper .contact_form_wrapper #contact_form .inputRow .input_col .input_wrapper input {
     width: 100%;
