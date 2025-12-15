@@ -1,7 +1,7 @@
 
 <?php
 /**
- * home Meet_Our_Expert_Doctor Template Part
+ * home meet_our_expert_doctor Template Part
  *
  * @package Mohammed
  */

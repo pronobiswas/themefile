@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: abbout_our_physicians
+ * Template Name: about_our_physicians
  * Description: A clean About_Our_Physicians page template with hero, content, contact sidebar and optional map.
  *
  * Place this file in your theme and assign the "About Practice" template to the page in WP admin.

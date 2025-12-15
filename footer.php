@@ -57,7 +57,7 @@
                 <hr>
                 <br>
             <div class="footNote">
-              <span>© 2025 Khairul islam. All Rights Reserved.</span>
+              <span>© 2025 All Rights Reserved.</span>
               <span><a href="#" class="footer_link">Support</a></span>
               <span><a href="#" class="footer_link">Privacy policy</a></span>
               <span><a href="#" class="footer_link">Terms of Condition</a></span>

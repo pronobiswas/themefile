@@ -11,13 +11,12 @@
     <div class="banner_content_wrapper">
         <div class="video_slider">
             <div class="banner_video active">
-                <span>video 1</span>
                 <video autoplay muted loop playsinline>
                     <source src="<?php echo get_template_directory_uri(); ?>/assets/video/home_banner_video.mp4"
                         type="video/mp4">
                 </video>
             </div>
-            <div class="banner_video">
+            <!-- <div class="banner_video">
                 <video autoplay muted loop playsinline>
                     <source src="<?php echo get_template_directory_uri(); ?>/assets/video/bannerVideo1.mp4"
                         type="video/mp4">
@@ -29,11 +28,10 @@
                         type="video/mp4">
                 </video>
             </div>
-            <!-- Navigation -->
             <div class="controls">
                 <button id="prevVideo" aria-label="Previous Video">⟨</button>
                 <button id="nextVideo" aria-label="Next Video">⟩</button>
-            </div>
+            </div> -->
         </div>
         <div class="banner_content">
             <h1>Live Life Pain-Free</h1>
@@ -56,7 +54,7 @@
     </div>
 </section>
 
-<script>
+<!-- <script>
 const slides = document.querySelectorAll(".banner_video");
 const nextBtn = document.getElementById("nextVideo");
 const prevBtn = document.getElementById("prevVideo");
@@ -84,9 +82,8 @@ prevBtn.addEventListener("click", () => {
   console.log("clicked prev");
 });
 
-// Optional: Auto slide every 8 seconds
 setInterval(() => {
   currentIndex = (currentIndex + 1) % slides.length;
   showSlide(currentIndex);
 }, 8000);
-</script>
+</script> -->
