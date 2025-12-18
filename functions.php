@@ -11,6 +11,7 @@ function mohammed_theme_scripts() {
     // Load JS file
     wp_enqueue_script('mohammed-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), false, true);
     wp_enqueue_script('contact-js', get_template_directory_uri() . '/assets/js/contact.js', array('jquery'), false, true);
+    wp_enqueue_script('contact-js', get_template_directory_uri() . '/assets/js/booking.js', array('jquery'), false, true);
 }
 add_action('wp_enqueue_scripts', 'mohammed_theme_scripts');
 

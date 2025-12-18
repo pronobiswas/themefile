@@ -99,7 +99,7 @@
                         align-items: center;
                         background-color: #fff;
                         border-radius: 10px;
-                        transition: 1.5s all linear;
+                        // transition: .05s all linear;
                         transform-origin: left top;
                         img{
                             width: 100%;
@@ -114,12 +114,10 @@
 
                     .page-2 {
                         background-color: lightgreen;
-                        // transform: rotateY(180deg);
                     }
 
                     .page-3 {
                         background-color: lightcoral;
-                        // transform: rotateY(180deg);
                     }
                 }
 

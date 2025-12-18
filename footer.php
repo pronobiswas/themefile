@@ -6,10 +6,10 @@
         <div class="footerWrapper">
             <div class="footernav">
                 <ul>
-                    <li><a href="#" class="footer_link">About Practice</a></li>
-                    <li><a href="#" class="footer_link">Treatments</a></li>
-                    <li><a href="#" class="footer_link">Patient Education</a></li>
-                    <li><a href="#" class="footer_link">Contact</a></li>
+                    <li><a href="<?php echo home_url('/about_practice'); ?>" class="footer_link">About Practice</a></li>
+                    <li><a href="<?php echo home_url('/treatments'); ?>" class="footer_link">Treatments</a></li>
+                    <li><a href="<?php echo home_url('/patient_education'); ?>" class="footer_link">Patient Education</a></li>
+                    <li><a href="<?php echo home_url('/contact'); ?>" class="footer_link">Contact</a></li>
                 </ul>
                 <div class="footerNavIcon">
                     <span>
@@ -41,12 +41,12 @@
                 </div>
                 <div class="footerContact">
                   <h6>Contact us:</h6>
-                  <p>Email: Northeastmeda@positivus.com</p>
-                  <p>Phone: (948)228-1198</p>
+                  <p>Email: contact@nemadrs.com</p>
+                  <p>Phone: 908-228-1198</p>
                   <p>Fax: (949)810-3172</p>
                   <address>
                     <p>Address:</p>
-                    <p>9711 3rd Avenue ,2nd flrBrooklyn, NY 11209</p>
+                    <p>9711 3rd Avenue , Brooklyn NY 11209,</br> 580 Montgomery St, Jersey City NJ 07302 </br>686 Bay St ,Staten island , NY 10304</p>
                   </address>
                 </div>
               </div>

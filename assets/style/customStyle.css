@@ -3420,7 +3420,6 @@ footer#footer .footerWrapper .footer_link:hover::after {
   align-items: center;
   background-color: #fff;
   border-radius: 10px;
-  transition: 1.5s all linear;
   transform-origin: left top;
 }
 #home_exercise_program .home_exercise_program_wrapper .home_exercise_program_content .slider .slider-container .slider-page img {

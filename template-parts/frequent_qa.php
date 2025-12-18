@@ -10,7 +10,7 @@
     <div class="frequent_select_option_wrapper">
         <div class="frequent_select_option">
             <select id="frequent_select">
-                <option value="neck pain">neck pain</option>
+                <option value="neck pain">Neck pain</option>
                 <option value="Low Back Pain">Low Back Pain</option>
                 <option value="Knee Pain">Knee Pain</option>
                 <option value="Headaches">Headaches</option>

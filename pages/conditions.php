@@ -21,7 +21,7 @@ get_header();
                         'template-parts/treatheading',
                         null,
                         [
-                            'treat_heading'    => 'Treatments We Treat',
+                            'treat_heading'    => 'Conditions We Treat',
                             'treat_subHeading' => 'At our practice, we are dedicated to providing compassionate, personalized care to every patient. Our team combines advanced medical expertise with a commitment to understanding each individual’s unique needs. Whether you’re visiting for diagnosis, treatment, or ongoing care, we strive to create a comfortable environment where your health and well-being come first. ',
                         ]
                     );
@@ -83,7 +83,7 @@ get_header();
                             </div>
                         </div>
                         <!-- --Cervical/ Thoracic/Lumbar Epidural Steroid injection--  -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/CervicalThoracicLumbar Facet Joint Injections.jpg"
                                     alt="headaches_migraines" class="glaryImage">
@@ -103,9 +103,9 @@ get_header();
                             <div class="cardTag">
                                 <span>Cervical/ Thoracic/Lumbar Epidural Steroid injection</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Cervical/Thoracic/Lumbar Facet Joint Injections-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/post_surgical.jpg"
                                     alt="headaches_migraines" class="glaryImage">
@@ -121,9 +121,9 @@ get_header();
                             <div class="cardTag">
                                 <span>Cervical/Thoracic/Lumbar Facet Joint Injections</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Cervical/Thoracic/Lumbar Medial Branch Block (MBB)-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/CervicalThoracicLumbarMedialBranchBlockMBB.jpg"
                                     alt="muscle_soft_tissue_pain.jpg" class="glaryImage">
@@ -144,7 +144,7 @@ get_header();
                             <div class="cardTag">
                                 <span>Cervical/Thoracic/Lumbar Medial Branch Block (MBB)</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Chronic Pain-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
@@ -185,7 +185,7 @@ get_header();
                             </div>
                         </div>
                         <!-- --Genicular Nerve Block-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/GenicularNerveBlock.png"
                                     alt="joint_pain.jpg" class="glaryImage">
@@ -196,7 +196,7 @@ get_header();
                             <div class="cardTag">
                                 <span>Genicular Nerve Block</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Hip Pain-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
@@ -211,7 +211,7 @@ get_header();
                             </div>
                         </div>
                         <!-- --Joint Injection-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/JointInjection.jpg"
                                     alt="JointInjection.jpg" class="glaryImage">
@@ -222,9 +222,9 @@ get_header();
                             <div class="cardTag">
                                 <span>Joint Injection</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Joint Viscosupplementation-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/joint_pain.jpg"
                                     alt="joint_pain.jpg" class="glaryImage">
@@ -235,9 +235,9 @@ get_header();
                             <div class="cardTag">
                                 <span>Joint Viscosupplementation</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Kyphoplasty-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Kyphoplasty.jpg"
                                     alt="Kyphoplasty.jpg" class="glaryImage">
@@ -248,7 +248,7 @@ get_header();
                             <div class="cardTag">
                                 <span>Kyphoplasty</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Low Back Pain-- -->
                         <div class="glaryItem">
                             <div class="glaryCard">
@@ -354,7 +354,7 @@ get_header();
                             </div>
                         </div>
                         <!-- --Peripheral Nerve Stimulation-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">s
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/peripheral-nerve-stimulation.webp"
                                     alt="peripheral-nerve-stimulation.webp" class="glaryImage">
@@ -365,9 +365,9 @@ get_header();
                             <div class="cardTag">
                                 <span>Peripheral Nerve Stimulation</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Radiofrequency Ablation-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/RadiofrequencyAblation.jpg"
                                     alt="RadiofrequencyAblation.jpg" class="glaryImage">
@@ -378,9 +378,9 @@ get_header();
                             <div class="cardTag">
                                 <span>Radiofrequency Ablation</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Endoscopic Rhizotomy-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/EndoscopicRhizotomy.webp"
                                     alt="EndoscopicRhizotomy.webp" class="glaryImage">
@@ -391,9 +391,9 @@ get_header();
                             <div class="cardTag">
                                 <span>Endoscopic Rhizotomy</span>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- --Sacroiliac Joint Injection-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/SacroiliacJointInjection.jpg"
                                     alt="SacroiliacJointInjection.jpg" class="glaryImage">
@@ -403,6 +403,19 @@ get_header();
                             </div>
                             <div class="cardTag">
                                 <span>Sacroiliac Joint Injection</span>
+                            </div>
+                        </div> -->
+                        <!-- --Varicose Veins-- -->
+                        <div class="glaryItem">
+                            <div class="glaryCard">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/VaricoseVeins.jpg"
+                                    alt="Varicose Veins" class="glaryImage">
+                                <div class="glaryContent">
+                                    <p>Varicose veins are swollen, twisted veins that often appear on the legs due to weakened valve function. They can cause pain, discomfort, and swelling, and are sometimes treated for cosmetic or medical reasons.</p>
+                                </div>
+                            </div>
+                            <div class="cardTag">
+                                <span>Varicose Veins</span>
                             </div>
                         </div>
                         <!-- --Sacroiliac Joint Pain-- -->
@@ -418,21 +431,8 @@ get_header();
                                 <span>Sacroiliac Joint Pain</span>
                             </div>
                         </div>
-                        <!-- --Spinal Cord Stimulator Trial/Implant-- -->
-                        <div class="glaryItem">
-                            <div class="glaryCard">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/SpinalCordStimulatorTrialImplant.jpg"
-                                    alt="SpinalCordStimulatorTrialImplant.jpg" class="glaryImage">
-                                <div class="glaryContent">
-                                    <p>A procedure that involves placing a device near the spinal cord to deliver electrical impulses, which block pain signals from reaching the brain. The trial phase tests its effectiveness before permanent implantation for chronic pain management.</p>
-                                </div>
-                            </div>
-                            <div class="cardTag">
-                                <span>Spinal Cord Stimulator Trial/Implant</span>
-                            </div>
-                        </div>
                         <!-- --Trigger Point Joint Injection-- -->
-                        <div class="glaryItem">
+                        <!-- <div class="glaryItem">
                             <div class="glaryCard">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Trigger Point Joint Injection.jpg"
                                     alt="joint_pain.jpg" class="glaryImage">
@@ -443,7 +443,21 @@ get_header();
                             <div class="cardTag">
                                 <span>Trigger Point Joint Injection</span>
                             </div>
-                        </div>
+                        </div> -->
+                        <!-- --Spinal Cord Stimulator Trial/Implant-- -->
+                        <!-- <div class="glaryItem">
+                            <div class="glaryCard">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/SpinalCordStimulatorTrialImplant.jpg"
+                                    alt="SpinalCordStimulatorTrialImplant.jpg" class="glaryImage">
+                                <div class="glaryContent">
+                                    <p>A procedure that involves placing a device near the spinal cord to deliver electrical impulses, which block pain signals from reaching the brain. The trial phase tests its effectiveness before permanent implantation for chronic pain management.</p>
+                                </div>
+                            </div>
+                            <div class="cardTag">
+                                <span>Spinal Cord Stimulator Trial/Implant</span>
+                            </div>
+                        </div> -->
+                        
 
                     </div>
 
